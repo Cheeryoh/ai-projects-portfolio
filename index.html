@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Justin Oh — Technical Program Manager specialising in certifications, L&D, and AI-assisted learning systems. 10 years at Google and TikTok." />
+  <meta property="og:title" content="Justin Oh — TPM · Certifications & AI" />
+  <meta property="og:description" content="10 years building certification programs at Google and TikTok. These are my AI experiments." />
+  <meta property="og:type" content="website" />
+  <title>Justin Oh — TPM · Certifications & AI</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23141413'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='600' font-size='14' fill='%23c9a96e'>JO</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-logo">Justin O</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#projects">Experiments</a></li>
+        <li><a href="#skills">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-mesh-a"></div>
+        <div class="hero-mesh-b"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-label">Technical Program Manager</p>
+          <h1 class="hero-title">
+            I build training and<br>certification programs.<br>
+            <em>These are my AI experiments.</em>
+          </h1>
+          <p class="hero-sub">
+            Ten years designing certification programs at Google and TikTok.
+            These prototypes explore what AI can do in the domain I know best.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">See the experiments →</a>
+            <a href="mailto:j3146596@gmail.com" class="btn btn-secondary">j3146596@gmail.com ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+
+        <div class="section-header" data-animate>
+          <p class="section-label">The Experiments</p>
+          <h2 class="section-title">3 AI prototypes I built to explore my domain.</h2>
+          <p class="section-subtitle">Early-stage work. Not production systems — just me testing what's possible.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- CARD 1: Exam Blueprint Agent — full width -->
+          <article class="card" data-animate>
+            <div class="card-top">
+              <span class="card-category">AI Experiment</span>
+              <span class="card-badge">
+                <span class="card-badge-dot" aria-hidden="true"></span>
+                Hosted on Railway
+              </span>
+            </div>
+
+            <div>
+              <h3 class="card-title">Exam Blueprint Agent</h3>
+              <p class="card-hook">An attempt to automate the exam design process I've run manually for years.</p>
+            </div>
+
+            <div class="card-divider" aria-hidden="true"></div>
+
+            <div class="card-stats" aria-label="Project metrics">
+              <div class="card-stat">
+                <span class="card-stat-value">14</span>
+                <span class="card-stat-label">AI Agents</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-value">5</span>
+                <span class="card-stat-label">Human Gates</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-value">22.5h</span>
+                <span class="card-stat-label">Build Time</span>
+              </div>
+            </div>
+
+            <p class="card-desc">
+              I've run exam design workshops and psychometric reviews professionally at TikTok and Google.
+              This pipeline uses 14 AI agents to replicate that process — from evidence gathering and SME
+              simulation to bias review and blueprint generation — with those standards in mind, not as
+              a certified claim. Five human-in-the-loop gates keep a person in the decision chain.
+              Built as a personal experiment to see how far AI can go in a domain I know well.
+            </p>
+
+            <div class="card-tags" aria-label="Technologies used">
+              <span class="tag">Node.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Multi-model</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">SSE</span>
+              <span class="tag">Railway</span>
+            </div>
+
+            <div class="card-ctas">
+              <a href="https://exam-jta-orchestration-production.up.railway.app/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="card-cta-primary">
+                Open Experiment ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- CARDS 2 & 3 -->
+          <div class="projects-sub-grid">
+
+            <!-- CARD 2: Candidate Experience Portal -->
+            <article class="card" data-animate>
+              <div class="card-top">
+                <span class="card-category">AI Experiment</span>
+                <span class="card-badge">
+                  <span class="card-badge-dot" aria-hidden="true"></span>
+                  Hosted on Vercel
+                </span>
+              </div>
+
+              <div>
+                <h3 class="card-title">Candidate Experience Portal</h3>
+                <p class="card-hook">A minimal candidate portal for the kind of certification program I've been managing since 2016.</p>
+              </div>
+
+              <div class="card-divider" aria-hidden="true"></div>
+
+              <div class="card-stats" aria-label="Project metrics">
+                <div class="card-stat">
+                  <span class="card-stat-value">18</span>
+                  <span class="card-stat-label">E2E Tests</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">RLS</span>
+                  <span class="card-stat-label">DB Security</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">✦</span>
+                  <span class="card-stat-label">Magic Links</span>
+                </div>
+              </div>
+
+              <p class="card-desc">
+                Having managed certification portals at Google for Education and TikTok Academy,
+                I wanted to see how quickly I could prototype one from scratch using AI.
+                This covers the candidate lifecycle: auth, eligibility tracking, prerequisite
+                validation, and cross-domain exam handoff. Early-stage — not designed for scale.
+              </p>
+
+              <div class="card-tags" aria-label="Technologies used">
+                <span class="tag">Next.js 16</span>
+                <span class="tag">React 19</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind 4</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Playwright</span>
+              </div>
+
+              <div class="card-ctas">
+                <a href="https://cert-candidate-portal.vercel.app/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="card-cta-primary">
+                  Open Experiment ↗
+                </a>
+              </div>
+            </article>
+
+            <!-- CARD 3: Agentic Skills Lab -->
+            <article class="card" data-animate>
+              <div class="card-top">
+                <span class="card-category">AI Experiment</span>
+                <span class="card-badge">
+                  <span class="card-badge-dot" aria-hidden="true"></span>
+                  Hosted on Vercel
+                </span>
+              </div>
+
+              <div>
+                <h3 class="card-title">Agentic Skills Lab</h3>
+                <p class="card-hook">An AI-graded hands-on exam environment — the kind of assessment I've designed manually for years.</p>
+              </div>
+
+              <div class="card-divider" aria-hidden="true"></div>
+
+              <div class="card-stats" aria-label="Project metrics">
+                <div class="card-stat">
+                  <span class="card-stat-value">4D</span>
+                  <span class="card-stat-label">AI Rubric</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">Auto</span>
+                  <span class="card-stat-label">Codespaces</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">2×</span>
+                  <span class="card-stat-label">Score Tracks</span>
+                </div>
+              </div>
+
+              <p class="card-desc">
+                Performance-based exams are the hardest part of certification design to get right.
+                This prototype provisions an isolated coding environment per candidate, runs
+                deterministic validation, then uses a four-dimension AI rubric — Delegation,
+                Description, Discernment, Diligence — to assess how well they worked with AI.
+                An experiment in whether AI can grade what humans currently review.
+              </p>
+
+              <div class="card-tags" aria-label="Technologies used">
+                <span class="tag">Next.js 15</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">GitHub API</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Vercel</span>
+              </div>
+
+              <div class="card-ctas">
+                <span class="card-cta-muted">Restricted Access</span>
+              </div>
+            </article>
+
+          </div><!-- /projects-sub-grid -->
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+
+        <div class="section-header" data-animate>
+          <p class="section-label">Background</p>
+          <h2 class="section-title">What I actually do.</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-group" data-animate>
+            <p class="skill-group-label">Certifications & L&D</p>
+            <div class="skill-item">Exam development & JTA facilitation</div>
+            <div class="skill-item">Psychometrics & item writing</div>
+            <div class="skill-item">Credentialing & digital badging</div>
+            <div class="skill-item">ANAB / ISO 17024 program design</div>
+            <div class="skill-item">Learning platform strategy (Docebo, Intellum)</div>
+          </div>
+
+          <div class="skill-group" data-animate>
+            <p class="skill-group-label">Program Management</p>
+            <div class="skill-item">0-to-1 product and program launch</div>
+            <div class="skill-item">Cross-functional stakeholder management</div>
+            <div class="skill-item">Vendor and BPO operations</div>
+            <div class="skill-item">Data-driven program iteration</div>
+            <div class="skill-item">Agile / Scrum facilitation</div>
+          </div>
+
+          <div class="skill-group" data-animate>
+            <p class="skill-group-label">AI Experimentation</p>
+            <div class="skill-item">Anthropic Claude API</div>
+            <div class="skill-item">Multi-agent workflow design</div>
+            <div class="skill-item">Human-in-the-loop systems</div>
+            <div class="skill-item">Supabase · Vercel · Railway</div>
+            <div class="skill-item">Prompt engineering & iteration</div>
+          </div>
+
+          <div class="skill-group" data-animate>
+            <p class="skill-group-label">Data & Platforms</p>
+            <div class="skill-item">SQL / BigQuery / Data Studio</div>
+            <div class="skill-item">ETL pipeline design</div>
+            <div class="skill-item">Salesforce / CRM operations</div>
+            <div class="skill-item">Google Analytics / GTM</div>
+            <div class="skill-item">LMS administration</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div data-animate>
+          <p class="section-label" style="justify-content:center;display:flex;margin-bottom:20px;">Get in touch</p>
+          <h2 class="contact-title">Let's work on something real.</h2>
+          <p class="contact-sub">Open to TPM roles in AI, EdTech, certifications, L&D, and eCommerce platforms.</p>
+          <div class="contact-links">
+            <a href="mailto:j3146596@gmail.com" class="contact-link contact-link-primary">
+              j3146596@gmail.com ↗
+            </a>
+            <a href="https://www.linkedin.com/in/heunoh/" target="_blank" rel="noopener noreferrer" class="contact-link contact-link-secondary">
+              LinkedIn ↗
+            </a>
+            <a href="https://github.com/Cheeryoh" target="_blank" rel="noopener noreferrer" class="contact-link contact-link-secondary">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Justin O</span>
+      <span style="margin-inline:12px;opacity:0.3">·</span>
+      <span>Hand-coded with care</span>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
