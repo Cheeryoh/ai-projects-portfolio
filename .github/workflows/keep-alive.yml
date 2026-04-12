@@ -1,4 +1,4 @@
-name: Keep Supabase Alive
+name: Keep Services Alive
 on:
   schedule:
     - cron: '0 0 */3 * *'  # Every 3 days at midnight UTC
@@ -27,3 +27,17 @@ jobs:
             exit 1
           fi
           echo "Supabase is alive!"
+
+  ping-railway:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Railway service
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://exam-jta-orchestration-production.up.railway.app")
+          echo "Railway ping status: $STATUS"
+          if [ "$STATUS" -eq 000 ]; then
+            echo "::warning::Railway service unreachable"
+            exit 1
+          fi
+          echo "Railway is alive! (HTTP $STATUS)"
