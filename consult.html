@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cheeryoh -- certification program design, LMS strategy, and AI assessment consulting." />
+  <meta property="og:title" content="Consulting -- Justin Oh" />
+  <meta property="og:description" content="Schedule a discovery call. Certification program architecture, LMS selection, AI assessment design, and L&D KPI frameworks." />
+  <title>Consulting -- Justin Oh</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23141413'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='600' font-size='14' fill='%23c9a96e'>JO</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 48px;
+    }
+    @media (max-width: 600px) {
+      .service-grid { grid-template-columns: 1fr; }
+    }
+    .service-item {
+      background: var(--surface);
+      padding: 32px;
+      transition: background var(--duration) var(--ease);
+    }
+    .service-item:hover { background: var(--surface-alt); }
+    .service-icon { font-size: 22px; margin-bottom: 16px; }
+    .service-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .service-desc { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+    .consult-form { max-width: 640px; margin-top: 48px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 540px) { .form-row { grid-template-columns: 1fr; } }
+    .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+    .form-group label { font-size: 13px; font-weight: 500; color: var(--accent); letter-spacing: 0.02em; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 14px;
+      outline: none;
+      transition: border-color var(--duration) var(--ease);
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--accent-warm); }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--text-dim); }
+    .form-group select option { background: var(--surface); color: var(--text); }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-success {
+      display: none;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      max-width: 480px;
+      margin-top: 48px;
+    }
+    .form-success p { color: var(--text-muted); font-size: 15px; margin-top: 8px; }
+    .form-success-title { color: var(--accent); font-size: 18px; font-weight: 500; }
+    .nav-active { color: var(--accent-warm) !important; }
+  </style>
+</head>
+<body id="page-top">
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Justin O</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html#projects">Experiments</a></li>
+        <li><a href="index.html#skills">Background</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="consult.html" class="nav-active">Consulting</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="top" style="padding-block: 120px 64px;">
+      <div class="container">
+        <p class="section-label">Cheeryoh</p>
+        <h1 class="hero-title" style="margin-top:12px;margin-bottom:24px;">
+          AI-first certification.<br>
+          <em>Built by someone who has run it.</em>
+        </h1>
+        <p class="hero-sub" style="max-width:620px;">
+          I partner with companies building or scaling certification programs.
+          LMS selection, exam vendor RFQ, KPI framework design, AI-powered assessment.
+          If your credentialing program is held together with spreadsheets and manual
+          renewal emails, that is where I come in.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <p class="section-label">What I do</p>
+        <h2 class="section-title" style="margin-top:8px;">Four areas of practice.</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="service-icon">&#127758;</div>
+            <div class="service-title">Certification Program Architecture</div>
+            <p class="service-desc">Multi-tier credentialing structures, skills taxonomy design, exam blueprint development, and renewal lifecycle governance. From a blank slate to a live program.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">&#128202;</div>
+            <div class="service-title">LMS Selection &amp; Implementation</div>
+            <p class="service-desc">RFP/RFQ vendor evaluation, platform migration, SSO integration, user permission architecture, and data integrity audits across Docebo, Skilljar, Intellum, and others.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">&#129302;</div>
+            <div class="service-title">AI Assessment Design</div>
+            <p class="service-desc">Performance-based exam design with LLM-graded rubrics and automated scoring. Moving beyond multiple choice toward real-world task validation at scale.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">&#128200;</div>
+            <div class="service-title">L&amp;D KPI Framework</div>
+            <p class="service-desc">Success metrics tied to business outcomes: certification adoption, renewal compliance, learner engagement, and linkage to gross retention and product fluency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title" style="margin-top:8px;margin-bottom:16px;">Request a discovery call.</h2>
+        <p class="hero-sub" style="max-width:540px;margin-bottom:0;">
+          Free 30 minutes. No pitch, just a conversation about where your
+          certification program is and where it needs to go.
+        </p>
+        <form class="consult-form" id="consult-form" action="https://formspree.io/f/FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="Consulting inquiry from cheeryoh.com" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Where you work" />
+          </div>
+          <div class="form-group">
+            <label for="topic">What do you need help with?</label>
+            <select id="topic" name="topic">
+              <option value="">Select one</option>
+              <option value="Certification Program Architecture">Certification Program Architecture</option>
+              <option value="LMS Selection and Implementation">LMS Selection &amp; Implementation</option>
+              <option value="AI Assessment Design">AI Assessment Design</option>
+              <option value="L&D KPI Framework">L&amp;D KPI Framework</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell me more</label>
+            <textarea id="message" name="message" placeholder="Where your program is today, what you are trying to solve..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Request</button>
+        </form>
+        <div class="form-success" id="form-success">
+          <div class="form-success-title">Request received.</div>
+          <p>I will be in touch within 48 hours.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>&copy; 2026 Justin O</span>
+      <span style="margin-inline:12px;opacity:0.3">&middot;</span>
+      <span>Cheeryoh</span>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+  <script>
+    const form = document.getElementById('consult-form')
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault()
+        const btn = form.querySelector('button[type="submit"]')
+        btn.textContent = 'Sending...'
+        btn.disabled = true
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' }
+          })
+          if (res.ok) {
+            form.style.display = 'none'
+            document.getElementById('form-success').style.display = 'block'
+          } else {
+            btn.textContent = 'Send Request'
+            btn.disabled = false
+          }
+        } catch {
+          btn.textContent = 'Send Request'
+          btn.disabled = false
+        }
+      })
+    }
+  </script>
+</body>
+</html>
