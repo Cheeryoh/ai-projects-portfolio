@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTA Exam Builder Orchestra — Walkthrough</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23141413'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='600' font-size='14' fill='%23c9a96e'>JO</text></svg>" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; background: #0e0e0d; }
+    #player-wrap {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    iframe {
+      width: 100vw;
+      height: 56.25vw; /* 16:9 */
+      max-height: 100vh;
+      max-width: 177.78vh;
+      border: none;
+    }
+    #back {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      background: rgba(0,0,0,0.4);
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: color .2s;
+      z-index: 10;
+    }
+    #back:hover { color: rgba(255,255,255,0.85); }
+  </style>
+</head>
+<body>
+  <a href="index.html" id="back">← Back</a>
+  <div id="player-wrap">
+    <div id="yt"></div>
+  </div>
+  <script>
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('yt', {
+        videoId: '81cj6c5laE0',
+        playerVars: {
+          autoplay: 1,
+          rel: 0,
+          modestbranding: 1,
+          vq: 'hd1080'
+        },
+        events: {
+          onReady: function(e) {
+            e.target.setPlaybackQuality('hd1080');
+            e.target.setPlaybackRate(1.25);
+            e.target.playVideo();
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
