@@ -72,71 +72,265 @@
 
         <div class="projects-grid">
 
-          <!-- CARD 1: JTA Exam Builder Orchestra, full width -->
-          <article class="card" data-animate>
+          <!-- CARD 1: The Exam AI Can't Take For You (AI Performance Lab), full width -->
+          <article class="card card-flagship" data-animate>
+            <div class="card-media">
+              <img src="assets/perflab-console.webp"
+                   alt="Exam console: interviewing the AI customer in chat while Claude Code works on the lab repo in a terminal"
+                   loading="lazy" width="1280" height="720" />
+              <img src="assets/perflab-report.webp"
+                   alt="Debrief report scoring 176 of 200, with the four-dimension rubric and quoted transcript evidence"
+                   loading="lazy" width="1280" height="720" />
+            </div>
+
             <div class="card-top">
               <span class="card-category">AI Experiment</span>
               <span class="card-badge">
                 <span class="card-badge-dot" aria-hidden="true"></span>
-                Hosted on Railway
+                Runs 100% Local
               </span>
             </div>
 
             <div>
-              <h3 class="card-title">JTA Exam Builder Orchestra</h3>
-              <p class="card-hook">An attempt to put on autopilot a process I've been running by hand since Google.</p>
+              <h3 class="card-title">The Exam AI Can't Take For You</h3>
+              <p class="card-hook">AI can pass any technical test. This exam measures the person using it: part tabletop exercise, part penetration-testing lab, part AI role-play.</p>
             </div>
 
             <div class="card-divider" aria-hidden="true"></div>
 
-            <div class="card-stats" aria-label="Project metrics">
-              <div class="card-stat">
-                <span class="card-stat-value">14</span>
-                <span class="card-stat-label">AI Agents</span>
-              </div>
-              <div class="card-stat">
-                <span class="card-stat-value">5</span>
-                <span class="card-stat-label">Human Gates</span>
-              </div>
-              <div class="card-stat">
-                <span class="card-stat-value">22.5h</span>
-                <span class="card-stat-label">Build Time</span>
-              </div>
-            </div>
+            <div class="card-body">
+              <div class="card-body-main">
+                <div class="card-stats" aria-label="Project metrics">
+                  <div class="card-stat">
+                    <span class="card-stat-value">200</span>
+                    <span class="card-stat-label">Point Rubric</span>
+                  </div>
+                  <div class="card-stat">
+                    <span class="card-stat-value">7</span>
+                    <span class="card-stat-label">Live Checks</span>
+                  </div>
+                  <div class="card-stat">
+                    <span class="card-stat-value">150</span>
+                    <span class="card-stat-label">Process Points</span>
+                  </div>
+                </div>
 
-            <p class="card-desc">
-              I've run exam design workshops and psychometric reviews professionally at TikTok and Google.
-              This pipeline uses 14 AI agents to replicate that process: evidence gathering, SME simulation,
-              bias review, and blueprint generation, with those standards in mind and not as
-              a certified claim. Five human-in-the-loop gates keep a person in the decision chain.
-              I built it independently; it's now in use at Intuit.
-            </p>
+                <p class="card-desc">
+                  Every AI certification on the market tests what you know about AI. None of
+                  them can watch you work with one. This lab closes that gap: a live support
+                  case, a simulated customer, real infrastructure, and a grader that reads
+                  your coding agent's own transcripts as evidence. The walkthrough shows two
+                  candidates finish on identical green checks and land 90 points apart. The
+                  outcome was the AI's; the gap is the human's process, and the process is
+                  what gets certified.
+                </p>
 
-            <div class="card-tags" aria-label="Technologies used">
-              <span class="tag">Node.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Claude API</span>
-              <span class="tag">Multi-model</span>
-              <span class="tag">Supabase</span>
-              <span class="tag">SSE</span>
-              <span class="tag">Railway</span>
-            </div>
+                <div class="card-tags" aria-label="Technologies used">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">Ollama</span>
+                  <span class="tag">Claude Code</span>
+                  <span class="tag">SSE</span>
+                  <span class="tag">Local-first</span>
+                </div>
 
-            <div class="card-ctas">
-              <a href="https://exam-jta-orchestration-production.up.railway.app/"
-                 target="_blank" rel="noopener noreferrer"
-                 class="card-cta-primary">
-                Open Experiment ↗
-              </a>
-              <a href="https://exam-jta-orchestration-production.up.railway.app/gallery.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Prior Runs ↗</a>
-              <a href="walkthrough-jta.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Watch walkthrough ↗</a>
+                <div class="card-ctas">
+                  <a href="walkthrough-perflab.html" target="_blank" rel="noopener noreferrer" class="card-cta-primary">Watch walkthrough ↗</a>
+                  <span class="card-cta-muted">Local Only</span>
+                </div>
+              </div>
+
+              <div class="card-steps" aria-label="How a session unfolds">
+                <p class="card-steps-label">How a session unfolds</p>
+                <ol>
+                  <li>An AI customer opens a support case.</li>
+                  <li>You interview her naturally, in plain chat.</li>
+                  <li>She reveals new information only when you ask the right questions.</li>
+                  <li>Behind the scenes, a real lab environment changes state.</li>
+                  <li>You troubleshoot actual infrastructure with your own AI agent.</li>
+                  <li>The customer reacts to what you fix.</li>
+                  <li>The assessment engine scores the technical work objectively, with cited evidence.</li>
+                </ol>
+              </div>
             </div>
           </article>
 
           <!-- CARDS 2-5 -->
           <div class="projects-sub-grid">
 
-            <!-- CARD 2: Candidate Experience Portal -->
+            <!-- CARD 2: JTA Exam Builder Orchestra -->
+            <article class="card" data-animate>
+              <div class="card-top">
+                <span class="card-category">AI Experiment</span>
+                <span class="card-badge">
+                  <span class="card-badge-dot" aria-hidden="true"></span>
+                  Hosted on Railway
+                </span>
+              </div>
+
+              <div>
+                <h3 class="card-title">JTA Exam Builder Orchestra</h3>
+                <p class="card-hook">An attempt to put on autopilot a process I've been running by hand since Google.</p>
+              </div>
+
+              <div class="card-divider" aria-hidden="true"></div>
+
+              <div class="card-stats" aria-label="Project metrics">
+                <div class="card-stat">
+                  <span class="card-stat-value">14</span>
+                  <span class="card-stat-label">AI Agents</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">5</span>
+                  <span class="card-stat-label">Human Gates</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">22.5h</span>
+                  <span class="card-stat-label">Build Time</span>
+                </div>
+              </div>
+
+              <p class="card-desc">
+                I've run exam design workshops and psychometric reviews professionally at TikTok and Google.
+                This pipeline uses 14 AI agents to replicate that process: evidence gathering, SME simulation,
+                bias review, and blueprint generation, with those standards in mind and not as
+                a certified claim. Five human-in-the-loop gates keep a person in the decision chain.
+                I built it independently; it's now in use at Intuit.
+              </p>
+
+              <div class="card-tags" aria-label="Technologies used">
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">Multi-model</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">SSE</span>
+                <span class="tag">Railway</span>
+              </div>
+
+              <div class="card-ctas">
+                <a href="https://exam-jta-orchestration-production.up.railway.app/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="card-cta-primary">
+                  Open Experiment ↗
+                </a>
+                <a href="https://exam-jta-orchestration-production.up.railway.app/gallery.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Prior Runs ↗</a>
+                <a href="walkthrough-jta.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Watch walkthrough ↗</a>
+              </div>
+            </article>
+
+            <!-- CARD 3: AI Fluency Performance Based Exam (V1) -->
+            <article class="card" data-animate>
+              <div class="card-top">
+                <span class="card-category">AI Experiment</span>
+                <span class="card-badge">
+                  <span class="card-badge-dot" aria-hidden="true"></span>
+                  Hosted on Vercel
+                </span>
+              </div>
+
+              <div>
+                <h3 class="card-title">AI Fluency Performance Based Exam (V1)</h3>
+                <p class="card-hook">An AI-graded hands-on exam environment. Built around an assessment model I've run on paper for most of my career.</p>
+              </div>
+
+              <div class="card-divider" aria-hidden="true"></div>
+
+              <div class="card-stats" aria-label="Project metrics">
+                <div class="card-stat">
+                  <span class="card-stat-value">4D</span>
+                  <span class="card-stat-label">AI Rubric</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">Auto</span>
+                  <span class="card-stat-label">Codespaces</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">2×</span>
+                  <span class="card-stat-label">Score Tracks</span>
+                </div>
+              </div>
+
+              <p class="card-desc">
+                Performance-based exams are the hardest part of certification design to get right.
+                This system provisions an isolated coding environment per candidate, runs
+                deterministic validation, then uses a four-dimension AI rubric (Delegation,
+                Description, Discernment, Diligence) to assess how well they worked with AI.
+                It grades what humans currently review, and it's now in development at Intuit.
+                Its successor, the flagship above, moves the whole exam live and local.
+              </p>
+
+              <div class="card-tags" aria-label="Technologies used">
+                <span class="tag">Next.js 15</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">GitHub API</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Vercel</span>
+              </div>
+
+              <div class="card-ctas">
+                <span class="card-cta-muted">Restricted Access</span>
+                <a href="walkthrough.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Watch walkthrough ↗</a>
+              </div>
+            </article>
+
+            <!-- CARD 4: CourseForge -->
+            <article class="card" data-animate>
+              <div class="card-top">
+                <span class="card-category">AI Experiment</span>
+                <span class="card-badge">
+                  <span class="card-badge-dot" aria-hidden="true"></span>
+                  Hosted on Vercel
+                </span>
+              </div>
+
+              <div>
+                <h3 class="card-title">CourseForge</h3>
+                <p class="card-hook">AI-orchestrated pipeline that turns a program idea into a principle-driven, Bloom-aligned learning program, starting from learner pain, not company agenda.</p>
+              </div>
+
+              <div class="card-divider" aria-hidden="true"></div>
+
+              <div class="card-stats" aria-label="Project metrics">
+                <div class="card-stat">
+                  <span class="card-stat-value">11</span>
+                  <span class="card-stat-label">AI Agents</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">8</span>
+                  <span class="card-stat-label">Human Gates</span>
+                </div>
+                <div class="card-stat">
+                  <span class="card-stat-value">L0→L3</span>
+                  <span class="card-stat-label">Levels</span>
+                </div>
+              </div>
+
+              <p class="card-desc">
+                Having designed learning programs at Google and TikTok, I wanted to see if AI
+                could handle the full pipeline: audience pain discovery, core principles definition,
+                Bloom-aligned curriculum design, formative assessment, and experience mapping.
+                Eleven agents collaborate through eight human-in-the-loop gates, enforcing
+                instructional design methodology at every step. Free learning funnels toward
+                paid certifications. Built on the same orchestration pattern as the JTA Exam Builder.
+              </p>
+
+              <div class="card-tags" aria-label="Technologies used">
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">React</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Vercel</span>
+              </div>
+
+              <div class="card-ctas">
+                <span class="card-cta-muted">Restricted Access</span>
+              </div>
+            </article>
+
+            <!-- CARD 5: Candidate Experience Portal -->
             <article class="card" data-animate>
               <div class="card-top">
                 <span class="card-category">AI Experiment</span>
@@ -190,175 +384,6 @@
                    class="card-cta-primary">
                   Open Experiment ↗
                 </a>
-              </div>
-            </article>
-
-            <!-- CARD 3: AI Fluency Performance Based Exam -->
-            <article class="card" data-animate>
-              <div class="card-top">
-                <span class="card-category">AI Experiment</span>
-                <span class="card-badge">
-                  <span class="card-badge-dot" aria-hidden="true"></span>
-                  Hosted on Vercel
-                </span>
-              </div>
-
-              <div>
-                <h3 class="card-title">AI Fluency Performance Based Exam</h3>
-                <p class="card-hook">An AI-graded hands-on exam environment. Built around an assessment model I've run on paper for most of my career.</p>
-              </div>
-
-              <div class="card-divider" aria-hidden="true"></div>
-
-              <div class="card-stats" aria-label="Project metrics">
-                <div class="card-stat">
-                  <span class="card-stat-value">4D</span>
-                  <span class="card-stat-label">AI Rubric</span>
-                </div>
-                <div class="card-stat">
-                  <span class="card-stat-value">Auto</span>
-                  <span class="card-stat-label">Codespaces</span>
-                </div>
-                <div class="card-stat">
-                  <span class="card-stat-value">2×</span>
-                  <span class="card-stat-label">Score Tracks</span>
-                </div>
-              </div>
-
-              <p class="card-desc">
-                Performance-based exams are the hardest part of certification design to get right.
-                This system provisions an isolated coding environment per candidate, runs
-                deterministic validation, then uses a four-dimension AI rubric (Delegation,
-                Description, Discernment, Diligence) to assess how well they worked with AI.
-                It grades what humans currently review, and it's now in development at Intuit.
-              </p>
-
-              <div class="card-tags" aria-label="Technologies used">
-                <span class="tag">Next.js 15</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">GitHub API</span>
-                <span class="tag">Claude API</span>
-                <span class="tag">Supabase</span>
-                <span class="tag">Vercel</span>
-              </div>
-
-              <div class="card-ctas">
-                <span class="card-cta-muted">Restricted Access</span>
-                <a href="walkthrough.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Watch walkthrough ↗</a>
-              </div>
-            </article>
-
-            <!-- CARD 4: AI Performance Lab (Performance Lab v2) -->
-            <article class="card" data-animate>
-              <div class="card-top">
-                <span class="card-category">AI Experiment</span>
-                <span class="card-badge">
-                  <span class="card-badge-dot" aria-hidden="true"></span>
-                  Runs 100% Local
-                </span>
-              </div>
-
-              <div>
-                <h3 class="card-title">AI Performance Lab</h3>
-                <p class="card-hook">The sequel to the AI Fluency exam, built on an uncomfortable finding: a good AI agent can pass the technical test entirely on its own.</p>
-              </div>
-
-              <div class="card-divider" aria-hidden="true"></div>
-
-              <div class="card-stats" aria-label="Project metrics">
-                <div class="card-stat">
-                  <span class="card-stat-value">200</span>
-                  <span class="card-stat-label">Point Rubric</span>
-                </div>
-                <div class="card-stat">
-                  <span class="card-stat-value">7</span>
-                  <span class="card-stat-label">Live Checks</span>
-                </div>
-                <div class="card-stat">
-                  <span class="card-stat-value">150</span>
-                  <span class="card-stat-label">Process Points</span>
-                </div>
-              </div>
-
-              <p class="card-desc">
-                The AI Fluency exam grades submitted work in a cloud sandbox. This successor
-                runs entirely on local hardware and watches the work happen live: a broken
-                repo, seven deterministic checks, and a simulated customer whose knowledge is
-                fact-gated, so requirements surface only when the interview earns them.
-                Grading reads the candidate's own coding agent transcripts as evidence. Only
-                50 of the 200 points ride on the technical outcome, because the agent can earn
-                those alone; the other 150 grade discovery, delegation, validation, and
-                communication. The walkthrough shows two candidates finish on identical green
-                checks and land 90 points apart.
-              </p>
-
-              <div class="card-tags" aria-label="Technologies used">
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">Ollama</span>
-                <span class="tag">Claude Code</span>
-                <span class="tag">SSE</span>
-                <span class="tag">Local-first</span>
-              </div>
-
-              <div class="card-ctas">
-                <span class="card-cta-muted">Local Only</span>
-                <a href="walkthrough-perflab.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Watch walkthrough ↗</a>
-              </div>
-            </article>
-
-            <!-- CARD 5: CourseForge -->
-            <article class="card" data-animate>
-              <div class="card-top">
-                <span class="card-category">AI Experiment</span>
-                <span class="card-badge">
-                  <span class="card-badge-dot" aria-hidden="true"></span>
-                  Hosted on Vercel
-                </span>
-              </div>
-
-              <div>
-                <h3 class="card-title">CourseForge</h3>
-                <p class="card-hook">AI-orchestrated pipeline that turns a program idea into a principle-driven, Bloom-aligned learning program, starting from learner pain, not company agenda.</p>
-              </div>
-
-              <div class="card-divider" aria-hidden="true"></div>
-
-              <div class="card-stats" aria-label="Project metrics">
-                <div class="card-stat">
-                  <span class="card-stat-value">11</span>
-                  <span class="card-stat-label">AI Agents</span>
-                </div>
-                <div class="card-stat">
-                  <span class="card-stat-value">8</span>
-                  <span class="card-stat-label">Human Gates</span>
-                </div>
-                <div class="card-stat">
-                  <span class="card-stat-value">L0→L3</span>
-                  <span class="card-stat-label">Levels</span>
-                </div>
-              </div>
-
-              <p class="card-desc">
-                Having designed learning programs at Google and TikTok, I wanted to see if AI
-                could handle the full pipeline: audience pain discovery, core principles definition,
-                Bloom-aligned curriculum design, formative assessment, and experience mapping.
-                Eleven agents collaborate through eight human-in-the-loop gates, enforcing
-                instructional design methodology at every step. Free learning funnels toward
-                paid certifications. Built on the same orchestration pattern as the JTA Exam Builder.
-              </p>
-
-              <div class="card-tags" aria-label="Technologies used">
-                <span class="tag">Node.js</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Claude API</span>
-                <span class="tag">React</span>
-                <span class="tag">Supabase</span>
-                <span class="tag">Vercel</span>
-              </div>
-
-              <div class="card-ctas">
-                <span class="card-cta-muted">Restricted Access</span>
               </div>
             </article>
 
