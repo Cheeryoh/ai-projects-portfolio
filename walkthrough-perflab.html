@@ -61,8 +61,8 @@
         },
         events: {
           onReady: function(e) {
-            // Rate stays 1.0: the on-screen chat is paced to reading speed.
             e.target.setPlaybackQuality('hd1080');
+            e.target.setPlaybackRate(1.25);
             e.target.playVideo();
           }
         }
