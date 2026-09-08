@@ -1,0 +1,137 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.420
+I built this system to turn public evidence into reviewable decisions.
+
+2
+00:00:03.800 --> 00:00:07.100
+This run asks what a customer-side Drata Administrator does.
+
+3
+00:00:07.360 --> 00:00:10.840
+It starts with a precise role brief and current official documentation.
+
+4
+00:00:11.320 --> 00:00:15.080
+The live pipeline completed eleven stages in just over twenty-eight minutes.
+
+5
+00:00:15.280 --> 00:00:19.460
+It normalized role, population, scope, and evidence rules into structured input.
+
+6
+00:00:19.720 --> 00:00:23.980
+No automated stage grants approval. Human approvals in this run are zero.
+
+7
+00:00:24.140 --> 00:00:28.200
+Research targeted vendor documentation that could support specific administrator tasks.
+
+8
+00:00:28.200 --> 00:00:32.740
+Twelve official pages were fetched live, with excerpts checked against their exact pages.
+
+9
+00:00:33.020 --> 00:00:38.340
+Ten source-bound evidence items were accepted. Two failed exact-source checks and were quarantined.
+
+10
+00:00:38.500 --> 00:00:43.420
+Eight retained synthesis sources shaped the draft. Retained does not mean independently validated.
+
+11
+00:00:43.820 --> 00:00:49.340
+Exact quote matching protects provenance, but cannot prove every generated claim is semantically supported.
+
+12
+00:00:49.740 --> 00:00:54.260
+From that evidence, the Pre-JTA proposed twenty-two tasks across five domains.
+
+13
+00:00:54.660 --> 00:01:00.880
+Three simulated reviewers challenged it: devil's advocate, fictional SME panel, and bias-and-fairness review.
+
+14
+00:01:01.500 --> 00:01:06.600
+They disagreed on priorities, frequency, company size, enterprise controls, and international coverage.
+
+15
+00:01:07.060 --> 00:01:10.840
+The system preserved disagreement and documented every reconciliation decision.
+
+16
+00:01:11.220 --> 00:01:15.640
+The result was twenty draft tasks across five domains, with fourteen documented changes.
+
+17
+00:01:16.040 --> 00:01:22.480
+It reduced the weakest domain's provisional weight, consolidated thin tasks, simplified language, and flagged shared-role work.
+
+18
+00:01:22.640 --> 00:01:29.900
+The domains cover access, governance, connections, controls and evidence, and access-review personnel data.
+
+19
+00:01:30.140 --> 00:01:34.840
+The capability layer then produced fourteen subdomains and sixty KSAs.
+
+20
+00:01:34.840 --> 00:01:38.280
+That is twenty-five knowledge statements, twenty-one skills, and fourteen abilities.
+
+21
+00:01:38.480 --> 00:01:42.580
+Every KSA stays in a known domain, and every task reference resolves.
+
+22
+00:01:42.660 --> 00:01:47.480
+Each accepted item keeps its URL, excerpt, receipt file, and receipt hash.
+
+23
+00:01:47.820 --> 00:01:51.780
+A separate pass ran three hundred ninety-seven structural and source checks. All passed.
+
+24
+00:01:52.020 --> 00:01:57.400
+They covered allowlists, quote spans, stable IDs, domain membership, and task-to-KSA links.
+
+25
+00:01:57.400 --> 00:02:02.000
+Those checks prove consistency and traceability. They do not equal human validation.
+
+26
+00:02:02.300 --> 00:02:07.300
+Every weight, frequency, criticality rating, confidence value, and reviewer judgment remains provisional.
+
+27
+00:02:07.480 --> 00:02:14.060
+No practitioner interviews, job-posting corroboration, observed frequencies, signed-in lesson evidence, or pilots were included.
+
+28
+00:02:14.720 --> 00:02:18.480
+This is an unapproved draft, not an exam, credential, or compliance assurance.
+
+29
+00:02:18.880 --> 00:02:23.400
+It is independent work, not affiliated with, endorsed by, or reviewed by Drata.
+
+30
+00:02:23.620 --> 00:02:29.720
+Example tasks cover Admin roles, least-privilege connections, control evidence, and access-review personnel data.
+
+31
+00:02:29.960 --> 00:02:34.000
+KSAs cover permissions, service accounts, and choosing evidence types for controls.
+
+32
+00:02:34.220 --> 00:02:38.120
+The public report shows accepted source links and exact excerpts for inspection.
+
+33
+00:02:38.440 --> 00:02:43.540
+Next, real administrators must validate tasks, identify gaps, and challenge every provisional rating.
+
+34
+00:02:43.860 --> 00:02:49.100
+Human semantic evidence review, accessibility review, and publication approval must happen before assessment design.

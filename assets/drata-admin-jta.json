@@ -1,0 +1,744 @@
+{
+  "meta": {
+    "title": "Independent Drata Administrator Competency Proposal",
+    "summary": "An unapproved portfolio draft for the Drata Administrator role with 5 domains, 20 tasks, and 60 KSAs.",
+    "statusLabel": "Unapproved draft \u00b7 Publication blocked",
+    "runId": "53dc55c4-2dd6-4e70-8d8e-54c4de84738b",
+    "generatedDate": "2026-09-08",
+    "disclosure": "Independent portfolio proposal by Justin Oh. Not affiliated with, endorsed by, or reviewed by Drata. Product administration is not compliance assurance.",
+    "footer": "Independent portfolio work. Simulated reviews are not human approvals; structural checks are not semantic validation."
+  },
+  "pipelineStages": [
+    {
+      "agent": "InputAgent",
+      "title": "Role intake",
+      "statusLabel": "Output retained",
+      "summary": "Normalized the exact target role for the draft pipeline.",
+      "facts": [
+        {
+          "label": "Role",
+          "value": "Drata Administrator"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "ResearchPlannerAgent",
+      "title": "Research planning",
+      "statusLabel": "Output retained",
+      "summary": "Planned collection from current official product documentation.",
+      "facts": [
+        {
+          "label": "Official receipts",
+          "value": "12"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "EvidenceCollectorAgent",
+      "title": "Evidence collection",
+      "statusLabel": "Corrected output retained",
+      "summary": "Retained only exact, source-specific excerpts after quarantining the failed legacy transport.",
+      "facts": [
+        {
+          "label": "Source-bound",
+          "value": "10"
+        },
+        {
+          "label": "Quarantined",
+          "value": "2"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "EvidenceSynthesizerAgent",
+      "title": "Evidence synthesis",
+      "statusLabel": "Output retained",
+      "summary": "Reduced the collected material to the source set used by the draft analysis.",
+      "facts": [
+        {
+          "label": "Sources retained",
+          "value": "8"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "PreJTAAgent",
+      "title": "Initial job-task draft",
+      "statusLabel": "Output retained",
+      "summary": "Produced a provisional job-task structure for subsequent review and reconciliation.",
+      "facts": [
+        {
+          "label": "Human approvals",
+          "value": "0"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "DomainsAgent",
+      "title": "Domain analysis",
+      "statusLabel": "Draft output retained",
+      "summary": "Organized the proposed work into domains and task statements.",
+      "facts": [
+        {
+          "label": "Domains",
+          "value": "5"
+        },
+        {
+          "label": "Tasks",
+          "value": "20"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "KSAAgent",
+      "title": "KSA mapping",
+      "statusLabel": "Draft output retained",
+      "summary": "Mapped draft knowledge, skill, and ability statements to the proposed domains.",
+      "facts": [
+        {
+          "label": "KSAs",
+          "value": "60"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "DevilsAdvocateAgent",
+      "title": "Challenge review",
+      "statusLabel": "Simulated, not approved",
+      "summary": "Challenged evidence coverage, role distinctiveness, and unsupported numeric precision.",
+      "facts": [
+        {
+          "label": "Human reviewers",
+          "value": "0"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "SMEPanelAgent",
+      "title": "SME perspective panel",
+      "statusLabel": "Fictional simulation",
+      "summary": "Compared fictional model personas; this was not a practitioner panel or consensus process.",
+      "facts": [
+        {
+          "label": "Human reviewers",
+          "value": "0"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "BiasAndFairnessAgent",
+      "title": "Bias and fairness review",
+      "statusLabel": "Simulated, not approved",
+      "summary": "Flagged access, readability, accessibility, and precision risks for later human review.",
+      "facts": [
+        {
+          "label": "Human reviewers",
+          "value": "0"
+        }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "FinalJTAAgent",
+      "title": "Draft reconciliation",
+      "statusLabel": "Not human-final",
+      "summary": "Reconciled model-generated feedback into an unapproved draft.",
+      "facts": [
+        {
+          "label": "Recorded changes",
+          "value": "14"
+        }
+      ],
+      "costLabel": "Not published"
+    }
+  ],
+  "domains": [
+    {
+      "id": "domain-1",
+      "name": "User, Role & Access Administration",
+      "weight": 25,
+      "rationale": "Proposed User, Role & Access Administration domain. Its 25% weight remains unvalidated pending practitioner evidence.",
+      "tasks": [
+        {
+          "id": "task-1-1",
+          "statement": "Assign, change, or remove the Admin role for platform users to control top-level system permissions",
+          "frequency": "monthly",
+          "criticality": "critical"
+        },
+        {
+          "id": "task-1-2",
+          "statement": "Read the RBAC access matrix to decide the correct role for each workspace user",
+          "frequency": "monthly",
+          "criticality": "important"
+        },
+        {
+          "id": "task-1-3",
+          "statement": "Identify and avoid risky or conflicting role combinations to preserve separation of duties; where true separation of duties is not structurally possible (e.g., a solo-admin organization), apply and document compensating controls instead",
+          "frequency": "rarely",
+          "criticality": "critical"
+        },
+        {
+          "id": "task-1-4",
+          "statement": "Grant or restrict remote access permission for Drata Support sessions",
+          "frequency": "rarely",
+          "criticality": "supportive"
+        },
+        {
+          "id": "task-1-5",
+          "statement": "Confirm workspace access scope remains correct after modifying a user's role assignment",
+          "frequency": "rarely",
+          "criticality": "important"
+        }
+      ]
+    },
+    {
+      "id": "domain-2",
+      "name": "Organizational Governance & Key Personnel Management",
+      "weight": 15,
+      "rationale": "Proposed Organizational Governance & Key Personnel Management domain. Its 15% weight remains unvalidated pending practitioner evidence.",
+      "tasks": [
+        {
+          "id": "task-2-1",
+          "statement": "Keep Key Personnel records (Executive Team, Security Committee, Board of Directors) accurate and assigned to active personnel",
+          "frequency": "monthly",
+          "criticality": "critical"
+        },
+        {
+          "id": "task-2-2",
+          "statement": "Configure remaining Admin-exclusive organization settings \u2014 org-wide language, notification and ticket-automation rules, API keys, and Quick Start \u2014 consolidated into one task because the only evidence is an enumerative list of page names with no per-setting procedural detail; actual frequency likely varies by organization",
+          "frequency": "rarely",
+          "criticality": "supportive"
+        },
+        {
+          "id": "task-2-3",
+          "statement": "Manage workspace details: name, icon, URL, description, and assigned managers",
+          "frequency": "monthly",
+          "criticality": "important"
+        }
+      ]
+    },
+    {
+      "id": "domain-3",
+      "name": "System Integrations & Connections Management",
+      "weight": 30,
+      "rationale": "Proposed System Integrations & Connections Management domain. Its 30% weight remains unvalidated pending practitioner evidence.",
+      "tasks": [
+        {
+          "id": "task-3-1",
+          "statement": "Set up third-party system connections using dedicated service accounts with least-privilege, read-only access",
+          "frequency": "monthly",
+          "criticality": "critical"
+        },
+        {
+          "id": "task-3-2",
+          "statement": "Connect systems in the vendor-recommended order \u2014 identity provider, then infrastructure, then version control, then ticketing \u2014 noting that real-world sequencing may instead follow procurement timelines rather than this textbook order",
+          "frequency": "rarely",
+          "criticality": "important"
+        },
+        {
+          "id": "task-3-3",
+          "statement": "Check connection health status and review AI-generated summaries that explain failed syncs (Connection Insights)",
+          "frequency": "weekly",
+          "criticality": "important"
+        },
+        {
+          "id": "task-3-4",
+          "statement": "Troubleshoot and fix unhealthy connections to keep automated evidence collection running continuously",
+          "frequency": "weekly",
+          "criticality": "critical"
+        }
+      ]
+    },
+    {
+      "id": "domain-4",
+      "name": "Compliance Framework, Controls & Evidence Management",
+      "weight": 22,
+      "rationale": "Proposed Compliance Framework, Controls & Evidence Management domain. Its 22% weight remains unvalidated pending practitioner evidence.",
+      "tasks": [
+        {
+          "id": "task-4-1",
+          "statement": "Map manual, file-based, or URL-based evidence to controls to show the controls are ready",
+          "frequency": "weekly",
+          "criticality": "critical"
+        },
+        {
+          "id": "task-4-2",
+          "statement": "Map or unmap policies to controls \u2014 including reviewing auto-mapped template policies \u2014 to keep traceability accurate",
+          "frequency": "monthly",
+          "criticality": "important"
+        },
+        {
+          "id": "task-4-3",
+          "statement": "Mark framework requirements in or out of scope and record the business reason for the decision",
+          "frequency": "monthly",
+          "criticality": "critical"
+        },
+        {
+          "id": "task-4-4",
+          "statement": "Check how a scope change affects control readiness and the framework's overall readiness percentage",
+          "frequency": "monthly",
+          "criticality": "important"
+        },
+        {
+          "id": "task-4-5",
+          "statement": "Assign and maintain multiple compliance frameworks (e.g., SOC 2, ISO 27001, HIPAA, GDPR) on a workspace, including ongoing scope adjustments as frameworks are added over time \u2014 distinct from task-2-3's one-time workspace setup",
+          "frequency": "rarely",
+          "criticality": "important"
+        }
+      ]
+    },
+    {
+      "id": "domain-5",
+      "name": "Access Reviews & Personnel Data Management",
+      "weight": 8,
+      "rationale": "Proposed Access Reviews & Personnel Data Management domain. Its 8% weight remains unvalidated pending practitioner evidence.",
+      "tasks": [
+        {
+          "id": "task-5-1",
+          "statement": "Upload or update personnel access data by CSV for manually added (non-connected) applications during access reviews",
+          "frequency": "monthly",
+          "criticality": "important"
+        },
+        {
+          "id": "task-5-2",
+          "statement": "Tell apart connected applications (access data syncs automatically) from manually added applications (CSV upload required) when preparing access reviews",
+          "frequency": "monthly",
+          "criticality": "supportive"
+        },
+        {
+          "id": "task-5-3",
+          "statement": "Use the provided CSV template so all required fields are complete before uploading access review data",
+          "frequency": "monthly",
+          "criticality": "supportive"
+        }
+      ]
+    }
+  ],
+  "ksas": [
+    {
+      "domainId": "domain-1",
+      "domainName": "User, Role & Access Administration",
+      "items": [
+        {
+          "id": "K1.1",
+          "type": "knowledge",
+          "statement": "Knowledge of what the Admin role permission grants at the platform/system level in Drata."
+        },
+        {
+          "id": "S1.1",
+          "type": "skill",
+          "statement": "Skill in assigning, changing, or removing a platform user's Admin role through Drata's user management interface."
+        },
+        {
+          "id": "A1.1",
+          "type": "ability",
+          "statement": "Ability to judge whether granting, changing, or revoking a user's Admin role is appropriate given the requester's job function and organizational risk."
+        },
+        {
+          "id": "K1.2",
+          "type": "knowledge",
+          "statement": "Knowledge of the structure and contents of the RBAC access matrix, including the permission scope of each defined role."
+        },
+        {
+          "id": "S1.2",
+          "type": "skill",
+          "statement": "Skill in reading the RBAC access matrix to select the correct role for a given workspace user's job function."
+        },
+        {
+          "id": "K1.3",
+          "type": "knowledge",
+          "statement": "Knowledge of role combinations that create separation-of-duties conflicts and of compensating-control concepts for organizations where true separation of duties is not structurally possible."
+        },
+        {
+          "id": "A1.2",
+          "type": "ability",
+          "statement": "Ability to evaluate a proposed role assignment for separation-of-duties conflicts."
+        },
+        {
+          "id": "S1.4",
+          "type": "skill",
+          "statement": "Skill in configuring role-based or custom permission boundaries so that conflicting duties (e.g., implementing a control and approving its own evidence) are not held by the same user."
+        },
+        {
+          "id": "K1.6",
+          "type": "knowledge",
+          "statement": "Knowledge of the need for periodic review of role assignments to detect separation-of-duties conflicts introduced after initial setup."
+        },
+        {
+          "id": "A1.4",
+          "type": "ability",
+          "statement": "Ability to design and document a compensating control when true separation of duties is not structurally achievable for a given role combination."
+        },
+        {
+          "id": "K1.4",
+          "type": "knowledge",
+          "statement": "Knowledge of the permission controlling Drata Support's remote access to a workspace and its security implications."
+        },
+        {
+          "id": "S1.3",
+          "type": "skill",
+          "statement": "Skill in granting or restricting the remote-access permission for Drata Support sessions."
+        },
+        {
+          "id": "K1.5",
+          "type": "knowledge",
+          "statement": "Knowledge of how a role change propagates to a user's workspace access scope."
+        },
+        {
+          "id": "A1.3",
+          "type": "ability",
+          "statement": "Ability to verify that a user's workspace access scope is correct and intended after modifying their role assignment."
+        }
+      ]
+    },
+    {
+      "domainId": "domain-2",
+      "domainName": "Organizational Governance & Key Personnel Management",
+      "items": [
+        {
+          "id": "K2.1",
+          "type": "knowledge",
+          "statement": "Knowledge of the Key Personnel categories required for governance records (Executive Team, Security Committee, Board of Directors)."
+        },
+        {
+          "id": "S2.1",
+          "type": "skill",
+          "statement": "Skill in updating Key Personnel records to keep assignments current with active personnel."
+        },
+        {
+          "id": "A2.1",
+          "type": "ability",
+          "statement": "Ability to judge when a personnel change (e.g., departure, role change) requires a Key Personnel record update to remain audit-accurate."
+        },
+        {
+          "id": "K2.6",
+          "type": "knowledge",
+          "statement": "Knowledge of how Key Personnel records serve as evidentiary support for governance and oversight requirements across compliance frameworks."
+        },
+        {
+          "id": "K2.2",
+          "type": "knowledge",
+          "statement": "Knowledge of the Admin-exclusive organization settings pages (notifications, ticket-automation rules, API keys, Quick Start)."
+        },
+        {
+          "id": "K2.3",
+          "type": "knowledge",
+          "statement": "Knowledge of org-wide language/localization settings and their relevance to multinational organizations."
+        },
+        {
+          "id": "K2.4",
+          "type": "knowledge",
+          "statement": "Knowledge of API key management concepts, including scope and rotation considerations, within organization settings."
+        },
+        {
+          "id": "S2.2",
+          "type": "skill",
+          "statement": "Skill in configuring notification and ticket-automation rules at the organization level."
+        },
+        {
+          "id": "S2.3",
+          "type": "skill",
+          "statement": "Skill in generating and managing API keys and completing Quick Start configuration tasks."
+        },
+        {
+          "id": "K2.5",
+          "type": "knowledge",
+          "statement": "Knowledge of the workspace detail fields (name, icon, URL, description, assigned managers) and their purpose."
+        },
+        {
+          "id": "K2.7",
+          "type": "knowledge",
+          "statement": "Knowledge of how workspace identity fields (name, URL, description) support distinguishing between multiple workspaces within a multi-entity organization."
+        },
+        {
+          "id": "S2.4",
+          "type": "skill",
+          "statement": "Skill in editing workspace details and assigning workspace managers."
+        },
+        {
+          "id": "A2.2",
+          "type": "ability",
+          "statement": "Ability to determine appropriate workspace manager assignments based on organizational accountability structure."
+        }
+      ]
+    },
+    {
+      "domainId": "domain-3",
+      "domainName": "System Integrations & Connections Management",
+      "items": [
+        {
+          "id": "K3.1",
+          "type": "knowledge",
+          "statement": "Knowledge of least-privilege, read-only service-account design principles for third-party system connections."
+        },
+        {
+          "id": "S3.1",
+          "type": "skill",
+          "statement": "Skill in setting up a third-party system connection using a dedicated, least-privilege service account."
+        },
+        {
+          "id": "A3.1",
+          "type": "ability",
+          "statement": "Ability to assess whether a proposed connection's access scope meets least-privilege requirements before activating it."
+        },
+        {
+          "id": "S3.5",
+          "type": "skill",
+          "statement": "Skill in documenting a connection's service-account credentials and granted access scope to support an audit trail at setup time."
+        },
+        {
+          "id": "K3.2",
+          "type": "knowledge",
+          "statement": "Knowledge of the vendor-recommended connection order (identity provider, infrastructure, version control, ticketing) and awareness that real-world sequencing may follow procurement timelines instead."
+        },
+        {
+          "id": "K3.4",
+          "type": "knowledge",
+          "statement": "Knowledge of dependencies between connection types, such as an identity provider connection enabling personnel and device correlation for later integrations."
+        },
+        {
+          "id": "S3.2",
+          "type": "skill",
+          "statement": "Skill in sequencing multiple system connections to align with both platform recommendations and organizational procurement constraints."
+        },
+        {
+          "id": "A3.4",
+          "type": "ability",
+          "statement": "Ability to prioritize connection setup order when vendor procurement timelines conflict with the platform-recommended sequence."
+        },
+        {
+          "id": "K3.3",
+          "type": "knowledge",
+          "statement": "Knowledge of connection health status indicators and the purpose of AI-generated Connection Insights summaries."
+        },
+        {
+          "id": "S3.3",
+          "type": "skill",
+          "statement": "Skill in checking connection health status and interpreting Connection Insights summaries to identify failed syncs."
+        },
+        {
+          "id": "A3.2",
+          "type": "ability",
+          "statement": "Ability to analyze a Connection Insights summary to determine the root cause of a failed sync."
+        },
+        {
+          "id": "S3.4",
+          "type": "skill",
+          "statement": "Skill in troubleshooting and remediating an unhealthy connection to restore automated evidence collection."
+        },
+        {
+          "id": "A3.3",
+          "type": "ability",
+          "statement": "Ability to diagnose recurring connection failures and implement a fix that keeps automated evidence collection running continuously."
+        }
+      ]
+    },
+    {
+      "domainId": "domain-4",
+      "domainName": "Compliance Framework, Controls & Evidence Management",
+      "items": [
+        {
+          "id": "K4.1",
+          "type": "knowledge",
+          "statement": "Knowledge of evidence types (manual, file-based, URL-based) and how each maps to control readiness requirements."
+        },
+        {
+          "id": "S4.1",
+          "type": "skill",
+          "statement": "Skill in mapping manual, file-based, or URL-based evidence to the correct controls."
+        },
+        {
+          "id": "K4.2",
+          "type": "knowledge",
+          "statement": "Knowledge of the policy-to-control mapping model, including auto-mapped template policies."
+        },
+        {
+          "id": "S4.2",
+          "type": "skill",
+          "statement": "Skill in mapping or unmapping policies to controls and reviewing auto-mapped template policies for accuracy."
+        },
+        {
+          "id": "K4.3",
+          "type": "knowledge",
+          "statement": "Knowledge of the criteria and documentation requirements for marking a framework requirement in or out of scope."
+        },
+        {
+          "id": "S4.3",
+          "type": "skill",
+          "statement": "Skill in marking framework requirements in or out of scope within Drata."
+        },
+        {
+          "id": "A4.1",
+          "type": "ability",
+          "statement": "Ability to evaluate and document a defensible business justification for a scope decision on a framework requirement."
+        },
+        {
+          "id": "K4.4",
+          "type": "knowledge",
+          "statement": "Knowledge of how scope changes propagate to control readiness and overall framework readiness percentage."
+        },
+        {
+          "id": "A4.2",
+          "type": "ability",
+          "statement": "Ability to analyze the downstream effect of a scope change on control and framework readiness."
+        },
+        {
+          "id": "K4.5",
+          "type": "knowledge",
+          "statement": "Knowledge of the compliance frameworks supported for workspace assignment (e.g., SOC 2, ISO 27001, HIPAA, GDPR) and ongoing scope-maintenance requirements."
+        },
+        {
+          "id": "S4.4",
+          "type": "skill",
+          "statement": "Skill in assigning and maintaining multiple compliance frameworks on a workspace, including ongoing scope adjustments as frameworks are added."
+        },
+        {
+          "id": "S4.5",
+          "type": "skill",
+          "statement": "Skill in configuring shared control mappings across multiple frameworks to avoid duplicating evidence collection effort."
+        },
+        {
+          "id": "A4.3",
+          "type": "ability",
+          "statement": "Ability to evaluate the impact of adding a new compliance framework on existing control scope and overall readiness across the workspace."
+        }
+      ]
+    },
+    {
+      "domainId": "domain-5",
+      "domainName": "Access Reviews & Personnel Data Management",
+      "items": [
+        {
+          "id": "K5.1",
+          "type": "knowledge",
+          "statement": "Knowledge of when a CSV upload is required to provide personnel access data for manually added applications during access reviews."
+        },
+        {
+          "id": "S5.1",
+          "type": "skill",
+          "statement": "Skill in uploading or updating personnel access data via CSV for manually added applications."
+        },
+        {
+          "id": "S5.2",
+          "type": "skill",
+          "statement": "Skill in using the provided CSV template to ensure all required fields are complete before uploading access review data."
+        },
+        {
+          "id": "K5.3",
+          "type": "knowledge",
+          "statement": "Knowledge of the required fields and format validation enforced by the CSV template for manually added application access data."
+        },
+        {
+          "id": "K5.2",
+          "type": "knowledge",
+          "statement": "Knowledge of the distinction between connected applications (automatic access-data sync) and manually added applications (CSV upload required)."
+        },
+        {
+          "id": "A5.1",
+          "type": "ability",
+          "statement": "Ability to correctly classify an application as connected or manually added when preparing an access review."
+        },
+        {
+          "id": "S5.3",
+          "type": "skill",
+          "statement": "Skill in reconciling discrepancies between uploaded CSV access data and known personnel records during an access review."
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "kind": "simulated-agent-review",
+      "label": "Not human approved",
+      "title": "Evidence challenge",
+      "summary": "weak. All retained evidence comes from one vendor-owned Help Center domain; no labor-market, practitioner, or independent framework corroboration exists. Domain 5 remains thin: three task statements rest on one short article and the source does not establish Administrator-exclusive ownership. Several organization-setting tasks are inferred from a page-name list without procedural evidence. Numeric weights, frequencies, and criticality values remain hypotheses despite their precise representation. Shared-role work is a large part of the proposed Administrator scope, reducing role distinctiveness."
+    },
+    {
+      "kind": "fictional-simulated-persona-panel",
+      "label": "Not human approved",
+      "title": "Simulated SME perspectives",
+      "summary": "no-valid-human-consensus. Every persona was explicitly fictional and simulated; none supplied practitioner evidence or approval. The simulated perspectives disagreed on domain weights and task cadence across enterprise, small-organization, assessment, and international contexts. Repeated concerns were the single-source evidence base and weak support for Domain 5. Suggestions about compensating controls, procurement ordering, audit-log review, localization, and data residency were not source evidence."
+    },
+    {
+      "kind": "simulated-agent-review",
+      "label": "Not human approved",
+      "title": "Bias and fairness review",
+      "summary": "pass-with-notes-model-label-only. Precise numeric judgments create credential-inflation risk when evidence confidence is low. Dense task language may add construct-irrelevant reading load for non-native English speakers and candidates with reading disabilities. Hands-on tasks assume employer-sponsored access to a configured Drata tenant; no alternative sandbox was established. Future assessment content must be screen-reader compatible and must not depend solely on visual matrices or dashboards. The reported readability score was a model estimate, not a measured result."
+    },
+    {
+      "kind": "automated-integrity-audit",
+      "label": "Not human approved",
+      "title": "Independent publication QA",
+      "summary": "publication-blocked. The exact role is Drata Administrator, but page access does not by itself prove day-to-day role ownership or task frequency. All public source excerpts are exact substrings of the named, hash-bound official receipt body. The structural verification does not bind each complete task or KSA claim to a semantically supporting excerpt. Compensating-control, procurement-timeline, periodic-review, API-rotation, shared-control-mapping, and discrepancy-reconciliation details need dedicated support before publication. The artifact named FinalJTA is a reconciled model draft, not a human-finalized JTA."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-01",
+      "title": "Admins overview",
+      "url": "https://help.drata.com/en/articles/13604014-admins-overview",
+      "excerpt": "highest level of access"
+    },
+    {
+      "id": "S-02",
+      "title": "Roles and permissions overview",
+      "url": "https://help.drata.com/en/articles/13578465-roles-and-permissions-overview-new-experience",
+      "excerpt": "Admins have full read and write access across all areas of the workspace."
+    },
+    {
+      "id": "S-03",
+      "title": "Manage workspace details",
+      "url": "https://help.drata.com/en/articles/13567122-manage-workspace-details-new-experience",
+      "excerpt": "Other users may be able to view workspace information but cannot make changes."
+    },
+    {
+      "id": "S-04",
+      "title": "Understanding connections in Drata",
+      "url": "https://help.drata.com/en/articles/13273728-understanding-connections-in-drata",
+      "excerpt": "Drata Admin role"
+    },
+    {
+      "id": "S-05",
+      "title": "Map evidence and policies to controls",
+      "url": "https://help.drata.com/en/articles/13416972-map-evidence-and-policies-to-controls-new-experience",
+      "excerpt": "Admins, Information security leads, Workspace managers, Control managers, and DevOps engineers have access to this section within Drata."
+    },
+    {
+      "id": "S-06",
+      "title": "Upload or update personnel data for access reviews",
+      "url": "https://help.drata.com/en/articles/13704660-upload-or-update-personnel-data-for-access-reviews-new-experience",
+      "excerpt": "only for manually added applications"
+    },
+    {
+      "id": "S-07",
+      "title": "Organization settings: key personnel information",
+      "url": "https://help.drata.com/en/articles/13566374-organization-settings-key-personnel-information-new-experience",
+      "excerpt": "Only account administrators have access to this section within Drata."
+    },
+    {
+      "id": "S-08",
+      "title": "Marking requirements in and out of scope",
+      "url": "https://help.drata.com/en/articles/13765784-marking-requirements-in-and-out-of-scope",
+      "excerpt": "Admins, Information Security Leads, or Workspace Managers with write access to Frameworks can update requirement scope."
+    }
+  ],
+  "validationNext": [
+    "Run a real practitioner panel for the exact Drata Administrator role and retain named review records, conflicts, and approvals.",
+    "Bind every complete task and KSA claim to an exact source excerpt and receipt hash, then perform independent semantic-support review rather than URL-membership checking.",
+    "Validate domain weights, task frequency, and criticality using practitioner survey or observed-work evidence; do not treat current numbers as estimates with known precision.",
+    "Collect independent corroboration beyond vendor documentation, including role postings or practitioner evidence, and document disagreements with the vendor-defined capability model.",
+    "Remove or separately source the known unsupported extensions covering compensating controls, procurement timing, periodic reviews, API-key rotation, shared-control mappings, and CSV discrepancy reconciliation.",
+    "Observe representative tasks in a current authorized tenant and distinguish Admin-exclusive duties from capabilities shared with Workspace Manager, Information Security Lead, Control Manager, DevOps Engineer, or Access Reviewer roles.",
+    "Complete human plain-language, accessibility, internationalization, and role-access review, including a fair practice path for people without employer-sponsored tenant access.",
+    "Treat exam blueprinting, item writing, standard setting, piloting, psychometrics, and cut-score decisions as later gated work; none was completed or approved in this run."
+  ]
+}
