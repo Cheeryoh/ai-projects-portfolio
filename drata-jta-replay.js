@@ -3,7 +3,9 @@
   const $ = id => document.getElementById(id);
   const safeList = value => Array.isArray(value) ? value : [];
   const safeText = (value, fallback = "") => typeof value === "string" && value.trim() ? value.trim() : fallback;
-  let timer;
+  let timer = null;
+  let activeIndex = 0;
+  let replayStages = [];
 
   function createStage(stage, index) {
     const el = document.createElement("article");
@@ -14,6 +16,12 @@
     const title = document.createElement("h2"); title.textContent = safeText(stage.title, "Pipeline stage");
     const state = document.createElement("p"); state.textContent = safeText(stage.statusLabel, "Completed agent output");
     el.append(id, cost, title, state);
+    if (stage.parallelGroup === "reviewers") {
+      const parallel = document.createElement("p");
+      parallel.className = "parallel-note";
+      parallel.textContent = "Parallel simulated review";
+      el.append(parallel);
+    }
     return el;
   }
 
@@ -24,6 +32,8 @@
     cards.forEach((card, i) => {
       card.classList.toggle("active", i === index);
       card.classList.toggle("complete", i < index);
+      if (i === index) card.setAttribute("aria-current", "step");
+      else card.removeAttribute("aria-current");
     });
     $("progress-bar").style.width = `${((index + 1) / stages.length) * 100}%`;
     $("detail-label").textContent = safeText(stage.agent, `STAGE ${index + 1}`).toUpperCase();
@@ -36,17 +46,34 @@
       li.append(label, document.createTextNode(safeText(fact.value, "Not reported")));
       return li;
     }));
+    $("stage-position").textContent = `Stage ${index + 1} of ${stages.length} · ${timer === null ? "Paused" : "Playing"}`;
+    $("previous").disabled = index === 0;
+    $("next").disabled = index === stages.length - 1;
+    $("play").disabled = timer !== null;
+    $("pause").disabled = timer === null;
   }
 
-  function autoplay(stages) {
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) { show(stages, stages.length - 1); return; }
-    let index = 0;
-    show(stages, index);
+  function pause() {
+    if (timer !== null) clearInterval(timer);
+    timer = null;
+    show(replayStages, activeIndex);
+  }
+
+  function play() {
+    if (timer !== null || !replayStages.length) return;
+    if (activeIndex === replayStages.length - 1) activeIndex = 0;
     timer = setInterval(() => {
-      index += 1;
-      if (index >= stages.length) { clearInterval(timer); return; }
-      show(stages, index);
-    }, 3600);
+      activeIndex += 1;
+      if (activeIndex === replayStages.length - 1) pause();
+      else show(replayStages, activeIndex);
+    }, Number($("speed").value));
+    show(replayStages, activeIndex);
+  }
+
+  function move(delta) {
+    pause();
+    activeIndex = Math.max(0, Math.min(replayStages.length - 1, activeIndex + delta));
+    show(replayStages, activeIndex);
   }
 
   async function load() {
@@ -57,7 +84,16 @@
     if (!stages.length) throw new Error("No public pipeline stages were exported");
     $("run-meta").textContent = `${safeText(data.meta?.runId, "run pending")}\n${safeText(data.meta?.generatedDate, "date pending")}`;
     $("stages").replaceChildren(...stages.map(createStage));
-    autoplay(stages);
+    replayStages = stages;
+    show(replayStages, activeIndex);
+    $("previous").addEventListener("click", () => move(-1));
+    $("next").addEventListener("click", () => move(1));
+    $("play").addEventListener("click", play);
+    $("pause").addEventListener("click", pause);
+    $("speed").addEventListener("change", () => {
+      if (timer !== null) { pause(); play(); }
+    });
+    document.addEventListener("visibilitychange", () => { if (document.hidden) pause(); });
   }
 
   load().catch(error => {

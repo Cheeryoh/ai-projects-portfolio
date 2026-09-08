@@ -79,37 +79,8 @@
       "costLabel": "Not published"
     },
     {
-      "agent": "DomainsAgent",
-      "title": "Domain analysis",
-      "statusLabel": "Draft output retained",
-      "summary": "Organized the proposed work into domains and task statements.",
-      "facts": [
-        {
-          "label": "Domains",
-          "value": "5"
-        },
-        {
-          "label": "Tasks",
-          "value": "20"
-        }
-      ],
-      "costLabel": "Not published"
-    },
-    {
-      "agent": "KSAAgent",
-      "title": "KSA mapping",
-      "statusLabel": "Draft output retained",
-      "summary": "Mapped draft knowledge, skill, and ability statements to the proposed domains.",
-      "facts": [
-        {
-          "label": "KSAs",
-          "value": "60"
-        }
-      ],
-      "costLabel": "Not published"
-    },
-    {
       "agent": "DevilsAdvocateAgent",
+      "parallelGroup": "reviewers",
       "title": "Challenge review",
       "statusLabel": "Simulated, not approved",
       "summary": "Challenged evidence coverage, role distinctiveness, and unsupported numeric precision.",
@@ -123,6 +94,7 @@
     },
     {
       "agent": "SMEPanelAgent",
+      "parallelGroup": "reviewers",
       "title": "SME perspective panel",
       "statusLabel": "Fictional simulation",
       "summary": "Compared fictional model personas; this was not a practitioner panel or consensus process.",
@@ -136,6 +108,7 @@
     },
     {
       "agent": "BiasAndFairnessAgent",
+      "parallelGroup": "reviewers",
       "title": "Bias and fairness review",
       "statusLabel": "Simulated, not approved",
       "summary": "Flagged access, readability, accessibility, and precision risks for later human review.",
@@ -157,6 +130,27 @@
           "label": "Recorded changes",
           "value": "14"
         }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "DomainsAgent",
+      "title": "Domain analysis",
+      "statusLabel": "Draft output retained",
+      "summary": "Expanded the reconciled draft into domains and subdomains.",
+      "facts": [
+        { "label": "Domains", "value": "5" },
+        { "label": "Tasks", "value": "20" }
+      ],
+      "costLabel": "Not published"
+    },
+    {
+      "agent": "KSAAgent",
+      "title": "KSA mapping",
+      "statusLabel": "Draft output retained",
+      "summary": "Mapped draft knowledge, skill, and ability statements to the reconciled domains.",
+      "facts": [
+        { "label": "KSAs", "value": "60" }
       ],
       "costLabel": "Not published"
     }

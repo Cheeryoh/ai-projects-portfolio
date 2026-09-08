@@ -36,6 +36,13 @@
     .facts li { padding:11px 0; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
     .facts strong { color:var(--ink); }
     .footer-note { margin-top:18px; padding:12px 14px; color:#d4c5a5; background:rgba(228,185,105,.07); border-left:3px solid var(--gold); font-size:.82rem; }
+    .replay-controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:22px 0; }
+    .replay-controls button, .replay-controls select { min-height:44px; padding:8px 14px; font:inherit; color:var(--ink); background:var(--panel); border:1px solid var(--line); border-radius:6px; }
+    .replay-controls button { cursor:pointer; }
+    .replay-controls button:disabled { opacity:.45; cursor:default; }
+    a:focus-visible, button:focus-visible, select:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+    #stage-position { color:var(--muted); font-size:.85rem; }
+    .parallel-note { color:var(--teal); font-size:.8rem; }
     @media (max-width:1100px) { .stages { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:900px) { .layout,.head { grid-template-columns:1fr; } .run-meta { text-align:left; } }
     @media (max-width:600px) { header{padding:14px 18px}.stages{grid-template-columns:1fr}main{width:min(calc(100% - 24px),1320px);padding-top:28px} }
@@ -50,9 +57,18 @@
       <div class="run-meta" id="run-meta">Loading run projection</div>
     </div>
     <div class="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+    <div class="replay-controls" role="group" aria-label="Replay controls">
+      <button id="previous" type="button" aria-controls="stage-detail" disabled>Previous</button>
+      <button id="play" type="button" aria-controls="stage-detail" disabled>Play</button>
+      <button id="pause" type="button" aria-controls="stage-detail" disabled>Pause</button>
+      <button id="next" type="button" aria-controls="stage-detail" disabled>Next</button>
+      <label for="speed">Speed</label><select id="speed"><option value="12000">0.5x</option><option value="6000" selected>1x</option><option value="3000">2x</option></select>
+      <span id="stage-position" role="status">Loading stages</span>
+    </div>
+    <p class="parallel-note">The three simulated reviews ran in parallel. Their perspectives are shown individually for reading. Replay starts paused.</p>
     <div class="layout">
       <div class="stages" id="stages" aria-label="Pipeline stages"></div>
-      <aside class="detail" aria-live="polite">
+      <aside class="detail" id="stage-detail" aria-live="polite">
         <div class="label" id="detail-label">WAITING</div>
         <h2 id="detail-title">Loading the run</h2>
         <p id="detail-summary">Only a public, reviewed projection is shown here.</p>
