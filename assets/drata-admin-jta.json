@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Independent Drata Administrator Competency Proposal",
-    "summary": "An unapproved portfolio draft for the Drata Administrator role with 5 domains, 20 tasks, and 60 KSAs.",
-    "statusLabel": "Unapproved draft \u00b7 Publication blocked",
+    "summary": "An unapproved research demonstration for the Drata Administrator role with 5 proposed domains, 20 draft tasks, and 60 draft KSAs.",
+    "statusLabel": "Research demonstration \u00b7 Not a validated JTA",
     "runId": "53dc55c4-2dd6-4e70-8d8e-54c4de84738b",
     "generatedDate": "2026-09-08",
     "disclosure": "Independent portfolio proposal by Justin Oh. Not affiliated with, endorsed by, or reviewed by Drata. Product administration is not compliance assurance.",
@@ -182,7 +182,7 @@
         },
         {
           "id": "task-1-3",
-          "statement": "Identify and avoid risky or conflicting role combinations to preserve separation of duties; where true separation of duties is not structurally possible (e.g., a solo-admin organization), apply and document compensating controls instead",
+          "statement": "Compare role permissions in the RBAC access matrix and avoid assigning conflicting permission sets to one workspace user",
           "frequency": "rarely",
           "criticality": "critical"
         },
@@ -240,7 +240,7 @@
         },
         {
           "id": "task-3-2",
-          "statement": "Connect systems in the vendor-recommended order \u2014 identity provider, then infrastructure, then version control, then ticketing \u2014 noting that real-world sequencing may instead follow procurement timelines rather than this textbook order",
+          "statement": "Connect systems in the documented order: identity provider, infrastructure, version control, then ticketing",
           "frequency": "rarely",
           "criticality": "important"
         },
@@ -356,7 +356,7 @@
         {
           "id": "K1.3",
           "type": "knowledge",
-          "statement": "Knowledge of role combinations that create separation-of-duties conflicts and of compensating-control concepts for organizations where true separation of duties is not structurally possible."
+          "statement": "Knowledge of how the RBAC access matrix distinguishes permissions among defined workspace roles."
         },
         {
           "id": "A1.2",
@@ -371,12 +371,12 @@
         {
           "id": "K1.6",
           "type": "knowledge",
-          "statement": "Knowledge of the need for periodic review of role assignments to detect separation-of-duties conflicts introduced after initial setup."
+          "statement": "Knowledge of which access-matrix permissions are assigned to Admins and other defined workspace roles."
         },
         {
           "id": "A1.4",
           "type": "ability",
-          "statement": "Ability to design and document a compensating control when true separation of duties is not structurally achievable for a given role combination."
+          "statement": "Ability to compare two defined workspace roles and identify their permission differences from the RBAC access matrix."
         },
         {
           "id": "K1.4",
@@ -437,7 +437,7 @@
         {
           "id": "K2.4",
           "type": "knowledge",
-          "statement": "Knowledge of API key management concepts, including scope and rotation considerations, within organization settings."
+          "statement": "Knowledge that API key configuration is listed among Admin-exclusive organization settings."
         },
         {
           "id": "S2.2",
@@ -498,7 +498,7 @@
         {
           "id": "K3.2",
           "type": "knowledge",
-          "statement": "Knowledge of the vendor-recommended connection order (identity provider, infrastructure, version control, ticketing) and awareness that real-world sequencing may follow procurement timelines instead."
+          "statement": "Knowledge of the documented connection order: identity provider, infrastructure, version control, then ticketing."
         },
         {
           "id": "K3.4",
@@ -508,12 +508,12 @@
         {
           "id": "S3.2",
           "type": "skill",
-          "statement": "Skill in sequencing multiple system connections to align with both platform recommendations and organizational procurement constraints."
+          "statement": "Skill in following the documented sequence when setting up multiple connection types."
         },
         {
           "id": "A3.4",
           "type": "ability",
-          "statement": "Ability to prioritize connection setup order when vendor procurement timelines conflict with the platform-recommended sequence."
+          "statement": "Ability to identify the next connection type in the documented setup sequence."
         },
         {
           "id": "K3.3",
@@ -604,7 +604,7 @@
         {
           "id": "S4.5",
           "type": "skill",
-          "statement": "Skill in configuring shared control mappings across multiple frameworks to avoid duplicating evidence collection effort."
+          "statement": "Skill in reviewing which compliance frameworks are assigned to a workspace before changing scope."
         },
         {
           "id": "A4.3",
@@ -650,7 +650,7 @@
         {
           "id": "S5.3",
           "type": "skill",
-          "statement": "Skill in reconciling discrepancies between uploaded CSV access data and known personnel records during an access review."
+          "statement": "Skill in checking that required CSV fields are complete before uploading access review data."
         }
       ]
     }
@@ -677,8 +677,8 @@
     {
       "kind": "automated-integrity-audit",
       "label": "Not human approved",
-      "title": "Independent publication QA",
-      "summary": "publication-blocked. The exact role is Drata Administrator, but page access does not by itself prove day-to-day role ownership or task frequency. All public source excerpts are exact substrings of the named, hash-bound official receipt body. The structural verification does not bind each complete task or KSA claim to a semantically supporting excerpt. Compensating-control, procurement-timeline, periodic-review, API-rotation, shared-control-mapping, and discrepancy-reconciliation details need dedicated support before publication. The artifact named FinalJTA is a reconciled model draft, not a human-finalized JTA."
+      "title": "Independent release boundary",
+      "summary": "demonstration-only. The exact role is Drata Administrator, but page access does not prove day-to-day role ownership or task frequency. Public excerpts are exact substrings of named, hash-bound official receipts. Structural verification does not establish semantic support for every complete task or KSA. This is a transparent pipeline demonstration, not a validated or human-final JTA."
     }
   ],
   "sources": [
@@ -736,7 +736,6 @@
     "Bind every complete task and KSA claim to an exact source excerpt and receipt hash, then perform independent semantic-support review rather than URL-membership checking.",
     "Validate domain weights, task frequency, and criticality using practitioner survey or observed-work evidence; do not treat current numbers as estimates with known precision.",
     "Collect independent corroboration beyond vendor documentation, including role postings or practitioner evidence, and document disagreements with the vendor-defined capability model.",
-    "Remove or separately source the known unsupported extensions covering compensating controls, procurement timing, periodic reviews, API-key rotation, shared-control mappings, and CSV discrepancy reconciliation.",
     "Observe representative tasks in a current authorized tenant and distinguish Admin-exclusive duties from capabilities shared with Workspace Manager, Information Security Lead, Control Manager, DevOps Engineer, or Access Reviewer roles.",
     "Complete human plain-language, accessibility, internationalization, and role-access review, including a fair practice path for people without employer-sponsored tenant access.",
     "Treat exam blueprinting, item writing, standard setting, piloting, psychometrics, and cut-score decisions as later gated work; none was completed or approved in this run."

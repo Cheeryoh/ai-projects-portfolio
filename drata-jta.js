@@ -137,7 +137,7 @@
     const meta = data.meta || {};
     document.getElementById("report-title").textContent = text(meta.title, "Drata Administrator");
     document.getElementById("report-summary").textContent = text(meta.summary, "A public-evidence draft produced through a multi-agent JTA pipeline.");
-    document.getElementById("disclosure").textContent = text(meta.disclosure, "This is an independent, unapproved draft built from public sources. It is not affiliated with or endorsed by Drata.");
+    document.getElementById("disclosure").textContent = text(meta.disclosure, "Independent portfolio proposal by Justin Oh. Not affiliated with, endorsed by, or reviewed by Drata. Product administration is not compliance assurance.");
     document.getElementById("run-footer").textContent = text(meta.footer, `Run ${text(meta.runId, "pending")} · Public projection only`);
     renderStatus({ ...meta, sourceCount: list(data.sources).length });
     renderStats(data);
