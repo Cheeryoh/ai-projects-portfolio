@@ -1,188 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A public-evidence Job Task Analysis draft for a Drata Administrator, produced through a multi-agent review pipeline." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="refresh" content="0; url=https://exam-jta-orchestration-production.up.railway.app/report.html?id=53dc55c4-2dd6-4e70-8d8e-54c4de84738b">
+  <link rel="canonical" href="https://exam-jta-orchestration-production.up.railway.app/report.html?id=53dc55c4-2dd6-4e70-8d8e-54c4de84738b">
   <title>Drata Administrator JTA | Justin Oh</title>
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #090d10;
-      --panel: #11181d;
-      --panel-2: #172128;
-      --ink: #f2f6f7;
-      --muted: #9aa9b2;
-      --line: #293740;
-      --teal: #69e0c2;
-      --gold: #e4b969;
-      --red: #ff8f82;
-      --max: 1180px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
+      display: grid;
+      min-height: 100vh;
       margin: 0;
-      background:
-        radial-gradient(circle at 92% 8%, rgba(105,224,194,.09), transparent 28rem),
-        linear-gradient(180deg, #0b1115 0, var(--bg) 38rem);
-      color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 16px;
-      line-height: 1.55;
+      place-items: center;
+      background: #0b1115;
+      color: #f2f6f7;
+      font: 16px/1.5 Inter, system-ui, sans-serif;
     }
-    a { color: var(--teal); }
-    a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-    .shell { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
-    .topbar {
-      display: flex; justify-content: space-between; align-items: center;
-      min-height: 64px; border-bottom: 1px solid var(--line);
-      font-size: .875rem; color: var(--muted);
-    }
-    .topbar a { color: var(--ink); text-decoration: none; }
-    .mark { font-weight: 750; letter-spacing: .08em; }
-    .top-links { display: flex; align-items: center; gap: 14px; }
-    .top-links a { color: var(--muted); }
-    .top-links a:hover { color: var(--teal); }
-    .hero { padding: 70px 0 44px; }
-    .eyebrow { color: var(--teal); font-size: .8rem; font-weight: 760; letter-spacing: .16em; text-transform: uppercase; }
-    h1 { max-width: 900px; margin: 12px 0 18px; font-size: clamp(2.5rem, 7vw, 5.8rem); line-height: .96; letter-spacing: -.055em; }
-    .lede { max-width: 760px; margin: 0; color: #c4cfd4; font-size: clamp(1.05rem, 2.2vw, 1.35rem); }
-    .status-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-    .action { display: inline-flex; align-items: center; min-height: 42px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); text-decoration: none; font-size: .88rem; font-weight: 700; }
-    .action.primary { border-color: var(--teal); background: var(--teal); color: #07110e; }
-    .action:hover { border-color: var(--gold); }
-    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; color: var(--muted); background: rgba(17,24,29,.72); font-size: .82rem; }
-    .pill strong { color: var(--ink); }
-    .pill.warning { border-color: rgba(228,185,105,.48); color: var(--gold); }
-    .notice { margin: 8px 0 40px; border-left: 3px solid var(--gold); padding: 14px 18px; background: rgba(228,185,105,.075); color: #d8c9aa; }
-    .pipeline { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; margin: 0 0 56px; border: 1px solid var(--line); background: var(--line); overflow: hidden; border-radius: 12px; }
-    .stage { min-height: 120px; padding: 18px 16px; background: var(--panel); }
-    .stage .n { display: block; color: var(--teal); font: 700 .76rem ui-monospace, SFMono-Regular, Consolas, monospace; }
-    .stage strong { display: block; margin-top: 22px; font-size: .95rem; }
-    .stage small { display: block; color: var(--muted); margin-top: 4px; }
-    main { padding-bottom: 80px; }
-    section { scroll-margin-top: 24px; padding: 36px 0; border-top: 1px solid var(--line); }
-    .section-head { display: grid; grid-template-columns: 160px 1fr; gap: 24px; margin-bottom: 24px; }
-    .section-no { color: var(--teal); font: 700 .8rem ui-monospace, SFMono-Regular, Consolas, monospace; }
-    h2 { margin: 0; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.08; letter-spacing: -.035em; }
-    .section-copy { max-width: 720px; color: var(--muted); margin-top: 8px; }
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-    .stat, .card { border: 1px solid var(--line); background: linear-gradient(145deg, var(--panel), #0d1418); border-radius: 12px; }
-    .stat { padding: 20px; }
-    .stat b { display: block; color: var(--gold); font-size: 2rem; line-height: 1; }
-    .stat span { display: block; color: var(--muted); margin-top: 8px; font-size: .85rem; }
-    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .card { padding: 22px; }
-    .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
-    .card p { margin: 0; color: var(--muted); }
-    .domain-meta { display: flex; justify-content: space-between; gap: 20px; color: var(--gold); font-size: .82rem; font-weight: 700; }
-    .task-list, .plain-list { margin: 16px 0 0; padding: 0; list-style: none; }
-    .task-list li, .plain-list li { padding: 11px 0; border-top: 1px solid var(--line); }
-    .task-id { color: var(--teal); font: 700 .76rem ui-monospace, SFMono-Regular, Consolas, monospace; margin-right: 8px; }
-    .task-meta { display: block; color: var(--muted); font-size: .8rem; margin: 5px 0 0 30px; }
-    .source { display: grid; grid-template-columns: 50px minmax(0,1fr); gap: 14px; }
-    .source-id { color: var(--teal); font: 700 .78rem ui-monospace, SFMono-Regular, Consolas, monospace; }
-    .quote { margin-top: 10px; color: #c8d2d7; font-size: .9rem; }
-    .quote::before { content: "“"; color: var(--gold); }
-    .quote::after { content: "”"; color: var(--gold); }
-    .review-card { border-left: 3px solid var(--teal); }
-    .review-card[data-kind="risk"] { border-left-color: var(--red); }
-    .review-card[data-kind="bias"] { border-left-color: var(--gold); }
-    .empty { padding: 24px; border: 1px dashed var(--line); border-radius: 10px; color: var(--muted); }
-    footer { border-top: 1px solid var(--line); padding: 26px 0 48px; color: var(--muted); font-size: .85rem; }
-    @media (max-width: 860px) {
-      .pipeline { grid-template-columns: repeat(2, 1fr); }
-      .stats { grid-template-columns: repeat(2, 1fr); }
-      .grid { grid-template-columns: 1fr; }
-      .section-head { grid-template-columns: 1fr; gap: 6px; }
-    }
-    @media (max-width: 520px) {
-      .hero { padding-top: 44px; }
-      .pipeline, .stats { grid-template-columns: 1fr; }
-      .stage { min-height: 92px; }
-      .topbar { align-items: flex-start; padding: 16px 0; gap: 12px; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    main { max-width: 36rem; padding: 2rem; text-align: center; }
+    a { color: #69e0c2; }
   </style>
+  <script>
+    location.replace("https://exam-jta-orchestration-production.up.railway.app/report.html?id=53dc55c4-2dd6-4e70-8d8e-54c4de84738b");
+  </script>
 </head>
 <body>
-  <header class="shell topbar">
-    <a class="mark" href="index.html">JUSTIN OH</a>
-    <div class="top-links"><a href="walkthrough-drata-jta.html">Walkthrough</a><a href="drata-jta-replay.html">Run replay</a></div>
-  </header>
-
-  <div class="shell hero">
-    <div class="eyebrow">Job Task Analysis · Public evidence</div>
-    <h1 id="report-title">Drata Administrator</h1>
-    <p class="lede" id="report-summary">Loading the public report projection.</p>
-    <div class="status-row" id="status-row"></div>
-    <div class="actions"><a class="action primary" href="walkthrough-drata-jta.html">Watch the walkthrough</a><a class="action" href="drata-jta-replay.html">Replay the agent run</a></div>
-  </div>
-
-  <main class="shell">
-    <div class="notice" id="disclosure">Independent portfolio proposal by Justin Oh. Not affiliated with, endorsed by, or reviewed by Drata. Product administration is not compliance assurance.</div>
-
-    <div class="pipeline" aria-label="JTA pipeline">
-      <div class="stage"><span class="n">01</span><strong>Frame the role</strong><small>Bounded request</small></div>
-      <div class="stage"><span class="n">02</span><strong>Gather evidence</strong><small>Current public sources</small></div>
-      <div class="stage"><span class="n">03</span><strong>Draft the JTA</strong><small>Tasks and context</small></div>
-      <div class="stage"><span class="n">04</span><strong>Challenge it</strong><small>Three review agents</small></div>
-      <div class="stage"><span class="n">05</span><strong>Reconcile</strong><small>Stable task identities</small></div>
-      <div class="stage"><span class="n">06</span><strong>Validate</strong><small>Administrator review pending</small></div>
-    </div>
-
-    <section id="overview">
-      <div class="section-head">
-        <div class="section-no">01 · OVERVIEW</div>
-        <div><h2>What the run produced</h2><p class="section-copy">A transparent first draft of the work, knowledge, and decisions associated with the named role.</p></div>
-      </div>
-      <div class="stats" id="stats"></div>
-    </section>
-
-    <section id="domains">
-      <div class="section-head">
-        <div class="section-no">02 · TASKS</div>
-        <div><h2>Domains and job tasks</h2><p class="section-copy">Weights are proposed by the system and remain provisional until practicing administrators validate frequency, criticality, and scope.</p></div>
-      </div>
-      <div class="grid" id="domain-grid"></div>
-    </section>
-
-    <section id="ksa">
-      <div class="section-head">
-        <div class="section-no">03 · KSA</div>
-        <div><h2>Knowledge, skills, and abilities</h2><p class="section-copy">The capability layer behind the tasks, kept traceable to its parent domain.</p></div>
-      </div>
-      <div class="grid" id="ksa-grid"></div>
-    </section>
-
-    <section id="review">
-      <div class="section-head">
-        <div class="section-no">04 · REVIEW</div>
-        <div><h2>How the draft was challenged</h2><p class="section-copy">These are simulated review perspectives generated from public evidence. They are not a substitute for a real practitioner panel.</p></div>
-      </div>
-      <div class="grid" id="review-grid"></div>
-    </section>
-
-    <section id="evidence">
-      <div class="section-head">
-        <div class="section-no">05 · SOURCES</div>
-        <div><h2>Evidence used by the agents</h2><p class="section-copy">Short excerpts and source links are shown so the role analysis can be inspected instead of merely trusted.</p></div>
-      </div>
-      <div class="grid" id="source-grid"></div>
-    </section>
-
-    <section id="next">
-      <div class="section-head">
-        <div class="section-no">06 · NEXT GATE</div>
-        <div><h2>What must happen before an exam</h2><p class="section-copy">The system can accelerate the analysis. Practicing Drata administrators must still decide whether it describes the job.</p></div>
-      </div>
-      <div class="card"><ul class="plain-list" id="validation-list"></ul></div>
-    </section>
+  <main>
+    <p>Opening the Drata Administrator JTA report.</p>
+    <p><a href="https://exam-jta-orchestration-production.up.railway.app/report.html?id=53dc55c4-2dd6-4e70-8d8e-54c4de84738b">Continue to the report</a></p>
   </main>
-
-  <footer><div class="shell"><span id="run-footer">Run metadata unavailable.</span></div></footer>
-  <script src="drata-jta.js" defer></script>
 </body>
 </html>
