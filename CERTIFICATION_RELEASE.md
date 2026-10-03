@@ -2,9 +2,9 @@
 
 Local review branch only. No deployment or YouTube upload is implied.
 
-Application checkpoint: `Cheeryoh/exam-jta-orchestration`, branch `feat/certification-intelligence`, commit `5bd67a7`.
+Application checkpoint: `Cheeryoh/exam-jta-orchestration`, branch `feat/certification-intelligence`, commit `0cc0470`.
 
-Verified local evidence: 10,000 synthetic candidate attempts, 600,000 responses, 25 lifecycle artifacts, 52 passing application tests, CPU R/mirt calibration, PostgreSQL repository tests, and a 368.92-second silent current-source capture. Eight separate voice-runner tests and a CPU H.264/AAC assembly fixture also passed. Candidate, SME and survey records are simulated, not evidence validating a credential.
+Verified local evidence: 10,000 synthetic candidate attempts, 600,000 responses, 25 lifecycle artifacts, 57 passing application tests, CPU R/mirt calibration, PostgreSQL repository tests, and a 368.76-second silent current-source capture. Eight separate voice-runner tests and a CPU H.264/AAC assembly fixture also passed. Candidate, SME and survey records are simulated, not evidence validating a credential.
 
 The historical YouTube video remains explicitly labeled as the original content-development walkthrough. The new narrated video is not published. Replace the pending-video notice only when an accepted final upload URL exists. Do not reuse the old video ID as if it demonstrated the lifecycle extension.
 
@@ -14,8 +14,8 @@ Original portfolio checkout and untracked material remain preserved at C:\Users\
 
 An optional CLI recipe scales twelve captured model-proposed archetypes into a separate seeded population. Its full 10,000-case run and CPU calibration were executed. These parameters are assumptions, not fitted estimates, and the recorded interview baseline remains unchanged.
 
-The stored-history monitor now reveals eight operational response batches. Batch five opens two investigations using only evidence available then. Complete-cohort findings and their captured model synthesis remain separate. Adversarial review corrected replay selection after database reload and incomplete input hashes; regression tests cover both. This demonstrates replay, not a live candidate-delivery integration.
+The application retains stored-history replay and now calculates synthetic arrivals on demand in resumable sessions. Each submitted batch uses only received observations and opens CTT-health or form-specific drift investigations. Exact source hashes and atomic head checks protect the session. The isolated browser check processed all eight batches, verified drift at batch five, exercised JTA removal/weight proposals and Angoff dispersion, and rejected stale heads without submitting human decisions. This is a sealed synthetic feed, not a live candidate-delivery integration.
 
-Capture: C:\Users\Justin O\Desktop\All AI Projects\agents\exam-certification-intelligence\data\walkthrough\recording-1791014667552\f47b6ce5b5efd7c491c5d10942fa5726.webm. Plan hash: `eafc0943e80ae055ad80099abd72ff330da88e16906b3e7b23f47e89a8911b0e`. The adjacent manifest binds 29 frontend/backend source hashes and an unchanged snapshot-response hash. The nine-scene script has 703 words. It is a technically verified silent artifact, not final narration or human audiovisual acceptance.
+Capture: C:\Users\Justin O\Desktop\All AI Projects\agents\exam-certification-intelligence\data\walkthrough\recording-1791016647713\bec488f4bc93d98e69f25d560ba81c53.webm. Plan hash: `916d88d942122d8d3a39ff7555068fd6bf514d1cfa7fc5332595f8b023b9d289`. The adjacent manifest binds 32 frontend/backend source hashes and an unchanged snapshot-response hash. The nine-scene script has 704 words. The saved arrival session was independently reread and matched the recorded head, with five calculated batches and zero decisions. It is a technically verified silent artifact, not final narration or human audiovisual acceptance.
 
 The revised portfolio page was loaded in headless Chrome on the local review server, checked for disclosure and current test counts, and visually inspected. It produced no page errors. No push, Railway deployment, hosted schema change or YouTube publication occurred.
