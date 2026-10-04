@@ -1,3 +1,15 @@
+## Current video, revision 3 (2026-10-04)
+
+Application checkpoint: 813190e on feat/certification-intelligence.
+
+The 203.158-second (3:23) final local video supersedes all earlier durations below. Path: C:\Users\Justin O\Desktop\All AI Projects\agents\exam-certification-intelligence\data\walkthrough\presentation-render-1791144984335\certification-lifecycle-final.mp4. SHA-256: 2de7cf12c7f935cd947f8fd1598e94db773b636edbfa44e3ff76eae1fa8e971b.
+
+All 15 specifically approved narration replacements completed. The edit preserves natural speed and the reviewed closing take. Forty caption, timing, pacing and audio tests pass; all 88 final caption cues are present. Root inspected 131 sampled frames plus dense transition samples. Actual Fable 5.1 inspected all 15 contact sheets and nine full-size frames and found no essential visual issue. Neither review claims human listening acceptance. Exact timing, narration, receipts and optional findings are in the application docs/REVISION_3_REVIEW.md.
+
+Publication, deployment and consequential certification decisions remain parked. The historical YouTube embed is unchanged and explicitly historical. The evidence below is retained as production history.
+
+---
+
 # Certification intelligence portfolio release
 
 Local review branch only. No deployment or YouTube upload is implied.
