@@ -1,10 +1,10 @@
-## Current video, revision 3 (2026-10-04)
+## Current video, repaired audio cut (2026-10-04)
 
-Application checkpoint: 813190e on feat/certification-intelligence.
+Application checkpoint: 7cb1786 on feat/certification-intelligence.
 
-The 203.158-second (3:23) final local video supersedes all earlier durations below. Path: C:\Users\Justin O\Desktop\All AI Projects\agents\exam-certification-intelligence\data\walkthrough\presentation-render-1791144984335\certification-lifecycle-final.mp4. SHA-256: 2de7cf12c7f935cd947f8fd1598e94db773b636edbfa44e3ff76eae1fa8e971b.
+The 200.911-second (3:21) repaired local candidate supersedes the rejected 3:23 delivery. Path: C:\Users\Justin O\Downloads\Certification Intelligence - Audio Repairs 2026-10-04\Certification Intelligence - 3m21s - repaired.mp4. SHA-256: b4a574bc3682a43c625bc56c81e810c4687ab613860fc3867dbf948dcc7716c8.
 
-All 15 specifically approved narration replacements completed. The edit preserves natural speed and the reviewed closing take. Forty caption, timing, pacing and audio tests pass; all 88 final caption cues are present. Root inspected 131 sampled frames plus dense transition samples. Actual Fable 5.1 inspected all 15 contact sheets and nine full-size frames and found no essential visual issue. Neither review claims human listening acceptance. Exact timing, narration, receipts and optional findings are in the application docs/REVISION_3_REVIEW.md.
+The repair removes repeated and stray speech, replaces clipped endings, shortens the form-count pause and derives scene boundaries from decoded video frames. Natural speed and the preferred Afterward take are preserved. All 89 caption cue centers and scheduled intervals pass raster presence checks; 18 scene-marker/timing tests pass. Root inspected 131 sampled frames, one full-size frame and 12 consecutive transition frames from this render. Actual Fable 5.1 performed a forensic review of the prior assembly, recognition and waveform evidence. Fable did not audition the repaired audio or review this render. Pronunciation, cadence and human audiovisual acceptance remain pending. See application docs/AUDIO_DEFECT_REVIEW.md and docs/DEMO_SCRIPT_AUDIO_REPAIRS.md.
 
 Publication, deployment and consequential certification decisions remain parked. The historical YouTube embed is unchanged and explicitly historical. The evidence below is retained as production history.
 
