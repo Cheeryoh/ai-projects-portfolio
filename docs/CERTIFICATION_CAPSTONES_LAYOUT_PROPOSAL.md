@@ -13,6 +13,7 @@ This keeps the current visual system: dark surfaces, warm borders, compact metri
 - The layout was verified at 1440px, 1024px, and 390px. The screenshots and measured geometry are in `C:\Users\Justin O\Desktop\All AI Projects\web\cheeryoh-certification-portfolio\docs\layout-verification`.
 - The Certification Intelligence walkthrough and deployment URLs are still pending verification. Both controls remain visibly disabled until those destinations exist and are checked.
 - The original JTA card, historical walkthrough, and Railway links remain in the supporting row.
+- `walkthrough-jta.html` now belongs only to the original JTA Exam Builder Orchestra and preserves the historical `81cj6c5laE0` video. `walkthrough-certification-intelligence.html` is a separate local preview with no borrowed video or deployment URL.
 
 ## Evidence from the current site
 
@@ -20,7 +21,7 @@ This keeps the current visual system: dark surfaces, warm borders, compact metri
 - The local branch currently places Certification Intelligence in the narrow-card row at `index.html:161`, while the live JTA Exam Builder card is no longer present as its own card. Restore that JTA card from the repository history or current production source. Do not turn the JTA card into the new capstone.
 - The existing flagship structure is `article.card.card-flagship` at `index.html:76`; its media, summary, and session steps are styled by `.card-media`, `.card-body`, `.card-body-main`, and `.card-steps` in `style.css:582-649`.
 - The supporting experiment grid is `.projects-sub-grid` at `index.html:159` and `style.css:395-399`.
-- The certification lifecycle video is still awaiting human acceptance and publication. `walkthrough-jta.html:19-20` correctly distinguishes the pending 3:21 lifecycle cut from the historical JTA video.
+- The certification lifecycle video is still awaiting human acceptance and publication. The historical JTA video remains in `walkthrough-jta.html`; the separate `walkthrough-certification-intelligence.html` keeps its public video and deployment actions disabled.
 - The existing Railway links open the original builder and its archived runs. They are not the future Certification Intelligence deployment.
 
 ## Proposed page structure
@@ -184,7 +185,7 @@ The Performance Lab walkthrough can continue to use `walkthrough-perflab.html`. 
 
 Certification Intelligence currently has neither an accepted public walkthrough URL nor a deployed application URL. Show both action positions, but render them as disabled non-anchor controls labeled `Walkthrough pending` and `Deployment pending`. Do not use `href="#"`, the historical YouTube ID, or the original Railway builder URL. Activate each CTA only after its destination is separately verified.
 
-When the new video is accepted, create a dedicated `walkthrough-certification-intelligence.html`. Keep `walkthrough-jta.html` associated with the original JTA card and its historical video. When the new app is deployed, its `Open Experiment` action must use the separate verified URL requested for Certification Intelligence.
+The dedicated `walkthrough-certification-intelligence.html` now provides an honest local preview without an embedded video. Keep `walkthrough-jta.html` associated with the original JTA card and its historical video. When the new video is accepted, add only its separately verified destination to the Certification Intelligence page and card. When the new app is deployed, its `Open Experiment` action must use the separate verified URL requested for Certification Intelligence.
 
 ## Screenshot strategy
 
@@ -212,7 +213,8 @@ Do not use a frame from the unpublished video as proof that the video is public.
 - `style.css:581-649`: scope shared media and step rules to `.card-capstone`; make the capstone body single-column at half width.
 - `style.css:652-666`: replace the current 1024/820 grid transitions with the 920px stack behavior described above.
 - `style.css:809-817`: make both capstone actions full width on mobile and preserve metric wrapping.
-- `walkthrough-jta.html:19-20`: retain the historical JTA distinction; do not silently replace the old embed with the pending lifecycle video.
+- `walkthrough-jta.html`: preserve the original JTA walkthrough and historical `81cj6c5laE0` video.
+- `walkthrough-certification-intelligence.html`: keep the lifecycle preview separate, disclose simulated data and simulated review, and leave both public actions disabled until their URLs are verified.
 - `assets/perflab-console.webp`: retain as Capstone 1 media.
 - `assets/certification-intelligence.png`: selected 1600x900 Certification Intelligence application screenshot.
 

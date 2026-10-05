@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-10-05T02:28:28.890Z",
+  "baseUrl": "http://127.0.0.1:61179/",
+  "results": [
+    {
+      "page": "jta",
+      "viewport": "desktop",
+      "title": "JTA Exam Builder Orchestra | Walkthrough",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "links": [
+        {
+          "text": "← Back to projects",
+          "href": "index.html"
+        },
+        {
+          "text": "Open original builder ↗",
+          "href": "https://exam-jta-orchestration-production.up.railway.app/"
+        }
+      ],
+      "disabled": [],
+      "image": [],
+      "youtubeId": true,
+      "overflow": []
+    },
+    {
+      "page": "jta",
+      "viewport": "mobile",
+      "title": "JTA Exam Builder Orchestra | Walkthrough",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390,
+      "links": [
+        {
+          "text": "← Back to projects",
+          "href": "index.html"
+        },
+        {
+          "text": "Open original builder ↗",
+          "href": "https://exam-jta-orchestration-production.up.railway.app/"
+        }
+      ],
+      "disabled": [],
+      "image": [],
+      "youtubeId": true,
+      "overflow": []
+    },
+    {
+      "page": "certification",
+      "viewport": "desktop",
+      "title": "Certification Intelligence | Local Preview",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "links": [
+        {
+          "text": "← Justin Oh / Projects",
+          "href": "index.html"
+        }
+      ],
+      "disabled": [
+        "Watch walkthrough pending",
+        "Open experiment pending"
+      ],
+      "image": [
+        {
+          "src": "assets/certification-intelligence.png",
+          "complete": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900
+        }
+      ],
+      "youtubeId": false,
+      "overflow": []
+    },
+    {
+      "page": "certification",
+      "viewport": "mobile",
+      "title": "Certification Intelligence | Local Preview",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390,
+      "links": [
+        {
+          "text": "← Justin Oh / Projects",
+          "href": "index.html"
+        }
+      ],
+      "disabled": [
+        "Watch walkthrough pending",
+        "Open experiment pending"
+      ],
+      "image": [
+        {
+          "src": "assets/certification-intelligence.png",
+          "complete": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 900
+        }
+      ],
+      "youtubeId": false,
+      "overflow": []
+    }
+  ]
+}
