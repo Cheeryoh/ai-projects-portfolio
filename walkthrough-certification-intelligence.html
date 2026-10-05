@@ -101,13 +101,10 @@
       <p class="muted">This walkthrough shows an independent demonstration using simulated data and simulated reviewer decisions.</p>
       <aside class="build-note" aria-labelledby="build-note-title">
         <div class="eyebrow">Behind the build</div>
-        <h3 id="build-note-title">Certification expertise, built with AI.</h3>
-        <p>I defined the certification workflow, directed the AI agents, and reviewed the product and walkthrough through successive revisions. My role covered the measurement design, technical requirements, integration decisions and release priorities.</p>
+        <h3 id="build-note-title">Agent orchestration and engineering</h3>
+        <p>I designed the architecture and coordinated scoped engineering tasks through Codex and Claude Code, with defined responsibilities, review checkpoints and automated acceptance checks. The platform combines model-assisted interpretation with deterministic simulation and statistical analysis, generating thousands of candidate attempts without thousands of model calls. Versioned artifacts, reproducible runs and explicit decision gates keep the workflow auditable.</p>
+        <p>I also extracted the narration and video-production tooling into reusable projects, including resumable voice generation, timed highlights, caption alignment and rendering checks.</p>
         <dl>
-          <div>
-            <dt>Build and review</dt>
-            <dd><strong>Codex (GPT-6 Astra)</strong> supported implementation and orchestration. <strong>Claude Code (Claude Fable 5.1)</strong> provided additional source-code, UX and sampled-frame reviews. I used their findings to direct fixes across the application and demo.</dd>
-          </div>
           <div>
             <dt>Simulation and analysis</dt>
             <dd><strong>GPT-5.6 Luna through Codex</strong> produced a recorded investigation synthesis from analysis evidence. Seeded statistical simulation generated the 10,000-candidate population; deterministic calculations produced the metrics. The public demo replays stored model outputs and simulated reviewer decisions.</dd>
@@ -117,6 +114,7 @@
             <dd><strong><a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener noreferrer">Voicebox</a> (Qwen3-TTS 1.7B)</strong> generated narration locally. My <a href="https://github.com/Cheeryoh/voicebox-narration-runner" target="_blank" rel="noopener noreferrer">Voicebox narration runner</a> manages resumable batches and output checks. Building on my <strong><a href="https://github.com/Cheeryoh/demo-forge" target="_blank" rel="noopener noreferrer">DemoForge</a></strong> workflow, <strong>Playwright</strong> and <strong>FFmpeg</strong> scripts captured the working app, timed highlights and captions, and assembled the video. <strong>faster-whisper</strong> supplied speech-alignment checks. I extracted the reusable tooling into these public repositories with examples, tests and setup instructions.</dd>
           </div>
         </dl>
+        <p class="build-stack"><strong>Model roles:</strong> GPT-6 Astra for engineering and orchestration; GPT-5.6 Luna for bounded investigation synthesis; Claude Fable 5.1 for targeted code, UX and visual review. Playwright, FFmpeg and automated tests handled repeatable verification.</p>
         <p class="build-stack"><strong>Engineering foundation:</strong> Node.js, TypeScript and Express; a Supabase/Postgres data model; an isolated Railway demo deployment; versioned evidence, repeatable seeds and automated tests.</p>
       </aside>
     </section>
