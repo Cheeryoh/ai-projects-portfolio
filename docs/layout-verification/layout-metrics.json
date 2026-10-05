@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-10-05T01:56:33.419Z",
+  "url": "http://127.0.0.1:59704/",
+  "viewports": {
+    "390": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "capstones": [
+        {
+          "x": 24,
+          "y": 1213.06,
+          "width": 342,
+          "height": 1145.88,
+          "bottom": 2358.94
+        },
+        {
+          "x": 24,
+          "y": 2378.94,
+          "width": 342,
+          "height": 1287.36,
+          "bottom": 3666.3
+        }
+      ],
+      "capstoneBottomDelta": 1307.36,
+      "ctaRects": [
+        {
+          "x": 53,
+          "y": 2235.75,
+          "width": 284,
+          "height": 94.19,
+          "bottom": 2329.94
+        },
+        {
+          "x": 53,
+          "y": 3543.11,
+          "width": 284,
+          "height": 94.19,
+          "bottom": 3637.3
+        }
+      ],
+      "ctaBottomDelta": 1307.36,
+      "supportingCount": 3,
+      "certificationImage": {
+        "complete": true,
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "rendered": {
+          "x": 25,
+          "y": 2379.94,
+          "width": 340,
+          "height": 191.25,
+          "bottom": 2571.19
+        }
+      },
+      "overflow": []
+    },
+    "1024": {
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "document": {
+        "clientWidth": 1024,
+        "scrollWidth": 1024
+      },
+      "capstones": [
+        {
+          "x": 24,
+          "y": 1180.69,
+          "width": 478,
+          "height": 1099.39,
+          "bottom": 2280.08
+        },
+        {
+          "x": 522,
+          "y": 1180.69,
+          "width": 478,
+          "height": 1099.39,
+          "bottom": 2280.08
+        }
+      ],
+      "capstoneBottomDelta": 0,
+      "ctaRects": [
+        {
+          "x": 57,
+          "y": 2204.98,
+          "width": 412,
+          "height": 42.09,
+          "bottom": 2247.08
+        },
+        {
+          "x": 555,
+          "y": 2204.98,
+          "width": 412,
+          "height": 42.09,
+          "bottom": 2247.08
+        }
+      ],
+      "ctaBottomDelta": 0,
+      "supportingCount": 3,
+      "certificationImage": {
+        "complete": true,
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "rendered": {
+          "x": 523,
+          "y": 1181.69,
+          "width": 476,
+          "height": 267.75,
+          "bottom": 1449.44
+        }
+      },
+      "overflow": []
+    },
+    "1440": {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "document": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440
+      },
+      "capstones": [
+        {
+          "x": 204,
+          "y": 1280.69,
+          "width": 506,
+          "height": 1049.33,
+          "bottom": 2330.02
+        },
+        {
+          "x": 730,
+          "y": 1280.69,
+          "width": 506,
+          "height": 1049.33,
+          "bottom": 2330.02
+        }
+      ],
+      "capstoneBottomDelta": 0,
+      "ctaRects": [
+        {
+          "x": 237,
+          "y": 2254.92,
+          "width": 440,
+          "height": 42.09,
+          "bottom": 2297.02
+        },
+        {
+          "x": 763,
+          "y": 2254.92,
+          "width": 440,
+          "height": 42.09,
+          "bottom": 2297.02
+        }
+      ],
+      "ctaBottomDelta": 0,
+      "supportingCount": 3,
+      "certificationImage": {
+        "complete": true,
+        "naturalWidth": 1600,
+        "naturalHeight": 900,
+        "rendered": {
+          "x": 731,
+          "y": 1281.69,
+          "width": 504,
+          "height": 283.5,
+          "bottom": 1565.19
+        }
+      },
+      "overflow": []
+    }
+  }
+}

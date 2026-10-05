@@ -66,25 +66,23 @@
 
         <div class="section-header" data-animate>
           <p class="section-label">The Experiments</p>
-          <h2 class="section-title">4 AI systems I built for L&D and certification.</h2>
-          <p class="section-subtitle">The original JTA builder supports my work at Intuit, with the AI Fluency Performance Based Exam in development. The new certification lifecycle extension is an independent simulation.</p>
+          <h2 class="section-title">5 AI systems I built for L&amp;D and certification.</h2>
+          <p class="section-subtitle">Two capstones show how I design and operate assessment systems end to end. The original JTA builder supports my work at Intuit, and the AI Fluency exam is in development there. Certification Intelligence is an independent simulation.</p>
         </div>
 
         <div class="projects-grid">
 
-          <!-- CARD 1: The AI Capability Engineering Exam (AI Performance Lab), full width -->
-          <article class="card card-flagship" data-animate>
+          <div class="projects-capstone-grid">
+          <!-- CAPSTONE 1: The AI Capability Engineering Exam -->
+          <article class="card card-capstone" data-animate>
             <div class="card-media">
               <img src="assets/perflab-console.webp"
                    alt="Exam console: interviewing the AI customer in chat while Claude Code works on the lab repo in a terminal"
                    loading="lazy" width="1280" height="720" />
-              <img src="assets/perflab-report.webp"
-                   alt="Debrief report scoring 176 of 200, with the four-dimension rubric and quoted transcript evidence"
-                   loading="lazy" width="1280" height="720" />
             </div>
 
             <div class="card-top">
-              <span class="card-category">AI Experiment</span>
+              <span class="card-category">Certification Capstone</span>
               <span class="card-badge">
                 <span class="card-badge-dot" aria-hidden="true"></span>
                 Runs 100% Local
@@ -93,13 +91,12 @@
 
             <div>
               <h3 class="card-title">The AI Capability Engineering Exam</h3>
-              <p class="card-hook">AI can pass any technical test. This exam measures the person using it: part tabletop exercise, part live-fire lab, part AI role-play.</p>
+              <p class="card-hook">AI can pass a technical test. This exam measures how the person works with it.</p>
             </div>
 
             <div class="card-divider" aria-hidden="true"></div>
 
             <div class="card-body">
-              <div class="card-body-main">
                 <div class="card-stats" aria-label="Project metrics">
                   <div class="card-stat">
                     <span class="card-stat-value">200</span>
@@ -115,15 +112,17 @@
                   </div>
                 </div>
 
-                <p class="card-desc">
-                  Every AI certification on the market tests what you know about AI. None of
-                  them can watch you work with one. This lab closes that gap: a live support
-                  case, a simulated customer, real infrastructure, and a grader that reads
-                  your coding agent's own transcripts as evidence. The walkthrough shows two
-                  candidates finish on identical green checks and land 90 points apart. The
-                  outcome was the AI's; the gap is the human's process, and the process is
-                  what gets certified.
-                </p>
+                <p class="card-desc">A live support case, an AI customer, real infrastructure, and transcript-backed grading reveal the candidate's process. Two candidates can reach the same technical result and still earn very different scores for how they investigated, delegated, verified, and explained the work.</p>
+
+                <div class="card-steps" aria-label="How a session works">
+                  <p class="card-steps-label">How a session works</p>
+                  <ol>
+                    <li>Interview a simulated customer in plain chat.</li>
+                    <li>Diagnose a live case with your own AI agent.</li>
+                    <li>The system captures technical and process evidence.</li>
+                    <li>A cited debrief scores the 200-point rubric.</li>
+                  </ol>
+                </div>
 
                 <div class="card-tags" aria-label="Technologies used">
                   <span class="tag">Node.js</span>
@@ -136,49 +135,42 @@
 
                 <div class="card-ctas">
                   <a href="walkthrough-perflab.html" target="_blank" rel="noopener noreferrer" class="card-cta-primary">Watch walkthrough ↗</a>
-                  <span class="card-cta-muted">Local Only</span>
+                  <span class="card-cta-ghost card-cta-disabled" role="link" aria-disabled="true" title="This experiment runs locally">Open Experiment</span>
                 </div>
-              </div>
-
-              <div class="card-steps" aria-label="How a session unfolds">
-                <p class="card-steps-label">How a session unfolds</p>
-                <ol>
-                  <li>An AI customer opens a support case.</li>
-                  <li>You interview her naturally, in plain chat.</li>
-                  <li>She reveals new information only when you ask the right questions.</li>
-                  <li>Behind the scenes, a real lab environment changes state.</li>
-                  <li>You troubleshoot actual infrastructure with your own AI agent.</li>
-                  <li>The customer reacts to what you fix.</li>
-                  <li>The assessment engine scores the technical work objectively, with cited evidence.</li>
-                </ol>
-              </div>
             </div>
           </article>
 
-          <!-- CARDS 2-4 -->
-          <div class="projects-sub-grid">
+            <!-- CAPSTONE 2: Certification Intelligence -->
+            <article class="card card-capstone" data-animate>
+              <div class="card-media">
+                <img src="assets/certification-intelligence.png" alt="Certification Intelligence workspace showing ten lifecycle stages, ten thousand synthetic candidates and clearly labeled simulated review" width="1600" height="900" loading="lazy">
+              </div>
 
-            <!-- CARD 2: Certification Intelligence -->
-            <article class="card" data-animate>
               <div class="card-top">
-                <span class="card-category">AI Experiment</span>
+                <span class="card-category">Certification Capstone</span>
                 <span class="card-badge">
                   <span class="card-badge-dot" aria-hidden="true"></span>
-                  Lifecycle extension: local preview
+                  Independent Simulation
                 </span>
               </div>
 
               <div>
                 <h3 class="card-title">Certification Intelligence</h3>
-                <p class="card-hook">From occupational evidence to exam maintenance, with humans responsible for consequential decisions.</p>
+                <p class="card-hook">A connected certification lifecycle, from job analysis to monitored release, with every consequential change passing through review.</p>
+              </div>
+
+              <div class="card-disclosures" aria-label="Simulation disclosures">
+                <span>Simulated Data</span>
+                <span>Simulated Review</span>
               </div>
 
               <div class="card-divider" aria-hidden="true"></div>
 
+              <div class="card-body">
               <div class="card-stats" aria-label="Project metrics">
                 <div class="card-stat">
-                  <span class="card-stat-value">25</span>
-                  <span class="card-stat-label">Lifecycle Phases</span>
+                  <span class="card-stat-value">10</span>
+                  <span class="card-stat-label">Lifecycle Stages</span>
                 </div>
                 <div class="card-stat">
                   <span class="card-stat-value">10,000</span>
@@ -190,38 +182,75 @@
                 </div>
               </div>
 
-              <p class="card-desc">
-                I extended my JTA orchestration system into a certification measurement lifecycle.
-                A vendor-neutral Data Center Facilities Technician simulation connects practitioner
-                surveys, Modified Angoff, CTT, conditional IRT calibration, release-drift monitoring,
-                and evidence-backed investigations. Humans retain authority over standards and changes.
-                Independently built and locally verified. All candidate, SME, survey and outcome
-                records are <strong>SYNTHETIC / SIMULATED DATA</strong>, not credential validation.
-              </p>
+              <p class="card-desc">This independent demonstration connects practitioner validation, blueprinting, standard setting, pilot analysis, launch, monitoring, investigation, and refresh. Its evidence and reviewer decisions are pre-generated simulations built to make governance visible. They do not validate a real credential.</p>
+
+              <div class="card-steps" aria-label="How evidence moves">
+                <p class="card-steps-label">How evidence moves</p>
+                <ol>
+                  <li>Practitioner evidence proposes the JTA and domain weights.</li>
+                  <li>An approved blueprint controls form assembly.</li>
+                  <li>Standard setting and pilot evidence support a reviewed launch.</li>
+                  <li>Monitoring opens investigations; approved successors return to pilot and revalidation.</li>
+                </ol>
+              </div>
 
               <div class="card-tags" aria-label="Technologies used">
                 <span class="tag">Node.js</span>
                 <span class="tag">TypeScript</span>
-                <span class="tag">Claude API</span>
                 <span class="tag">R / mirt</span>
                 <span class="tag">Supabase</span>
-                <span class="tag">SSE</span>
                 <span class="tag">Railway</span>
               </div>
 
               <div class="card-ctas">
-                <a href="https://exam-jta-orchestration-production.up.railway.app/index.html"
-                   target="_blank" rel="noopener noreferrer"
-                   class="card-cta-primary">
-                  Original builder ↗
-                </a>
-                <a href="https://exam-jta-orchestration-production.up.railway.app/gallery.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Prior Runs ↗</a>
-                <a href="walkthrough-jta.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Lifecycle walkthrough ↗</a>
-                <a href="drata-jta.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Drata role run ↗</a>
+                <span class="card-cta-primary card-cta-disabled" role="link" aria-disabled="true" title="Pending an accepted public video">Watch walkthrough</span>
+                <span class="card-cta-ghost card-cta-disabled" role="link" aria-disabled="true" title="Pending a separate verified deployment">Open Experiment</span>
+              </div>
               </div>
             </article>
 
-            <!-- CARD 3: AI Fluency Performance Based Exam (V1) -->
+          </div><!-- /projects-capstone-grid -->
+
+          <div class="projects-sub-grid">
+
+            <!-- CARD 3: JTA Exam Builder Orchestra -->
+            <article class="card" data-animate>
+              <div class="card-top">
+                <span class="card-category">AI Experiment</span>
+                <span class="card-badge">
+                  <span class="card-badge-dot" aria-hidden="true"></span>
+                  Hosted on Railway
+                </span>
+              </div>
+
+              <div>
+                <h3 class="card-title">JTA Exam Builder Orchestra</h3>
+                <p class="card-hook">An attempt to put on autopilot a process I've been running by hand since Google.</p>
+              </div>
+
+              <div class="card-divider" aria-hidden="true"></div>
+
+              <div class="card-stats" aria-label="Project metrics">
+                <div class="card-stat"><span class="card-stat-value">14</span><span class="card-stat-label">AI Agents</span></div>
+                <div class="card-stat"><span class="card-stat-value">5</span><span class="card-stat-label">Human Gates</span></div>
+                <div class="card-stat"><span class="card-stat-value">22.5h</span><span class="card-stat-label">Build Time</span></div>
+              </div>
+
+              <p class="card-desc">I've run exam design workshops and psychometric reviews professionally at TikTok and Google. This pipeline uses 14 AI agents to replicate that process: evidence gathering, SME simulation, bias review, and blueprint generation, with those standards in mind and not as a certified claim. Five human-in-the-loop gates keep a person in the decision chain. I built it independently; it's now in use at Intuit.</p>
+
+              <div class="card-tags" aria-label="Technologies used">
+                <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Claude API</span><span class="tag">Multi-model</span><span class="tag">Supabase</span><span class="tag">SSE</span><span class="tag">Railway</span>
+              </div>
+
+              <div class="card-ctas">
+                <a href="https://exam-jta-orchestration-production.up.railway.app/" target="_blank" rel="noopener noreferrer" class="card-cta-primary">Open Experiment &nearr;</a>
+                <a href="https://exam-jta-orchestration-production.up.railway.app/gallery.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Prior Runs &nearr;</a>
+                <a href="walkthrough-jta.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Watch walkthrough &nearr;</a>
+                <a href="drata-jta.html" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Drata role run &nearr;</a>
+              </div>
+            </article>
+
+            <!-- CARD 4: AI Fluency Performance Based Exam (V1) -->
             <article class="card" data-animate>
               <div class="card-top">
                 <span class="card-category">AI Experiment</span>
@@ -277,7 +306,7 @@
               </div>
             </article>
 
-            <!-- CARD 4: CourseForge -->
+            <!-- CARD 5: CourseForge -->
             <article class="card" data-animate>
               <div class="card-top">
                 <span class="card-category">AI Experiment</span>
