@@ -1,3 +1,17 @@
+## Current video and frontend, paper-trail cut (2026-10-04)
+
+Application checkpoint: 237353f on feat/certification-intelligence. See application docs/UX_NAVIGATION_REVIEW.md.
+
+The current 200.747-second (3:21) local candidate replaces the repeatedly rejected pronunciation with the approved paper-trail passage. Path: C:\Users\Justin O\Downloads\Certification Intelligence - Paper Trail 2026-10-04\Certification Intelligence - Paper Trail.mp4. SHA-256: e431dd0372bee244dcc387921101d07324dd9880deb72d8e04564f443c615e36.
+
+Natural speed and six prior repaired scene WAVs are retained. All 88 caption centers and scheduled intervals, seven chapter checks, full decode and audio-level checks pass on this file. Root inspected 131 sampled frames and a full-size boundary frame. CPU recognition recovered all 28 words from the changed passage extracted from the encoded video. This is not listening acceptance. No additional subtitle track or auto-loadable subtitle sidecar is delivered.
+
+Actual Anthropic claude-fable-5-1 performed a static frontend audit and follow-up using approved source files. Root fixed the distinct lifecycle routes, late-result races, review draft retention and saved-versus-refreshed error handling. All 16 sidebar views, ten lifecycle stages and 15 isolated failure/race scenarios pass real-browser checks, with no real decision writes. The interactive local app is http://127.0.0.1:4937/intelligence.html while its server is running.
+
+Fable did not audition or visually inspect this video. Human audiovisual acceptance, publication, deployment and consequential certification decisions remain pending. The historical YouTube embed and Railway links still represent the original builder. Earlier checkpoints below are production history, not current acceptance claims.
+
+---
+
 ## Current video, repaired audio cut (2026-10-04)
 
 Application checkpoint: 7cb1786 on feat/certification-intelligence.
