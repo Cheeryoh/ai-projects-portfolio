@@ -103,7 +103,7 @@
         <div class="eyebrow">Behind the build</div>
         <h3 id="build-note-title">Agent orchestration and engineering</h3>
         <p>I designed the architecture and coordinated scoped engineering tasks through Codex and Claude Code, with defined responsibilities, review checkpoints and automated acceptance checks. The platform combines model-assisted interpretation with deterministic simulation and statistical analysis, generating thousands of candidate attempts without thousands of model calls. Versioned artifacts, reproducible runs and explicit decision gates keep the workflow auditable.</p>
-        <p>I also extracted the narration and video-production tooling into reusable projects, including resumable voice generation, timed highlights, caption alignment and rendering checks.</p>
+        <p>The walkthrough combines my <a href="https://github.com/Cheeryoh/demo-forge" target="_blank" rel="noopener noreferrer">DemoForge</a> workflow for screen capture, timed highlights and captions with my <a href="https://github.com/Cheeryoh/voicebox-narration-runner" target="_blank" rel="noopener noreferrer">Voicebox narration runner</a> for resumable local narration using <a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener noreferrer">Voicebox</a>.</p>
         <dl>
           <div>
             <dt>Simulation and analysis</dt>
@@ -111,7 +111,7 @@
           </div>
           <div>
             <dt>Walkthrough production</dt>
-            <dd><strong><a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener noreferrer">Voicebox</a> (Qwen3-TTS 1.7B)</strong> generated narration locally. My <a href="https://github.com/Cheeryoh/voicebox-narration-runner" target="_blank" rel="noopener noreferrer">Voicebox narration runner</a> manages resumable batches and output checks. Building on my <strong><a href="https://github.com/Cheeryoh/demo-forge" target="_blank" rel="noopener noreferrer">DemoForge</a></strong> workflow, <strong>Playwright</strong> and <strong>FFmpeg</strong> scripts captured the working app, timed highlights and captions, and assembled the video. <strong>faster-whisper</strong> supplied speech-alignment checks. I extracted the reusable tooling into these public repositories with examples, tests and setup instructions.</dd>
+            <dd><strong>Qwen3-TTS 1.7B</strong> generated narration locally through Voicebox. <strong>Playwright</strong> captured the working application, <strong>FFmpeg</strong> assembled the video, and <strong>faster-whisper</strong> supplied speech-alignment checks.</dd>
           </div>
         </dl>
         <p class="build-stack"><strong>Model roles:</strong> GPT-6 Astra for engineering and orchestration; GPT-5.6 Luna for bounded investigation synthesis; Claude Fable 5.1 for targeted code, UX and visual review. Playwright, FFmpeg and automated tests handled repeatable verification.</p>
