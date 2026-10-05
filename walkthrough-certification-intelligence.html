@@ -33,6 +33,17 @@
     section { margin-top:50px; }
     .stages { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
     .stage p { margin:0; }
+    .build-note { margin-top:28px; padding:26px; border:1px solid var(--line); border-radius:12px; background:var(--card); }
+    .build-note h3 { margin:10px 0 12px; font-size:24px; }
+    .build-note p { margin:0 0 18px; }
+    .build-note dl { margin:0; }
+    .build-note dl > div { display:grid; grid-template-columns:180px minmax(0,1fr); gap:20px; padding:17px 0; border-top:1px solid var(--line); }
+    .build-note dt { font-weight:650; color:var(--text); }
+    .build-note dd { margin:0; color:var(--muted); }
+    .build-note strong { color:var(--text); font-weight:600; }
+    .build-note a { color:var(--accent); text-underline-offset:3px; }
+    .build-note a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+    .build-note .build-stack { max-width:none; margin:4px 0 0; padding-top:16px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }
     .actions a { display:inline-flex; min-height:44px; align-items:center; justify-content:center; padding:10px 17px; border:1px solid var(--accent); border-radius:8px; color:var(--bg); background:var(--accent); text-decoration:none; font-weight:600; }
     .actions a:hover { filter:brightness(1.1); }
     .actions a:focus-visible { outline:3px solid var(--text); outline-offset:4px; }
@@ -41,6 +52,7 @@
     footer { margin-top:54px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
     @media (max-width:800px) { .metrics { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:600px) { main { padding:24px 18px 60px; } nav { align-items:flex-start; flex-direction:column; margin-bottom:38px; } .lead { font-size:18px; } .metrics,.stages { grid-template-columns:1fr; } .actions { flex-direction:column; } .disabled { width:100%; } }
+    @media (max-width:600px) { .build-note { padding:20px; } .build-note dl > div { grid-template-columns:1fr; gap:6px; } }
   </style>
 </head>
 <body>
@@ -87,6 +99,26 @@
         Your browser does not support HTML5 video.
       </video>
       <p class="muted">This walkthrough shows an independent demonstration using simulated data and simulated reviewer decisions.</p>
+      <aside class="build-note" aria-labelledby="build-note-title">
+        <div class="eyebrow">Behind the build</div>
+        <h3 id="build-note-title">Certification expertise, built with AI.</h3>
+        <p>I defined the certification workflow, directed the AI agents, and reviewed the product and walkthrough through successive revisions. My role covered the measurement design, technical requirements, integration decisions and release priorities.</p>
+        <dl>
+          <div>
+            <dt>Build and review</dt>
+            <dd><strong>Codex (GPT-6 Astra)</strong> supported implementation and orchestration. <strong>Claude Code (Claude Fable 5.1)</strong> provided additional source-code, UX and sampled-frame reviews. I used their findings to direct fixes across the application and demo.</dd>
+          </div>
+          <div>
+            <dt>Simulation and analysis</dt>
+            <dd><strong>GPT-5.6 Luna through Codex</strong> produced a recorded investigation synthesis from analysis evidence. Seeded statistical simulation generated the 10,000-candidate population; deterministic calculations produced the metrics. The public demo replays stored model outputs and simulated reviewer decisions.</dd>
+          </div>
+          <div>
+            <dt>Walkthrough production</dt>
+            <dd><strong><a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener noreferrer">Voicebox</a> (Qwen3-TTS 1.7B)</strong> generated narration locally. Building on my <strong>DemoForge</strong> workflow, project-specific <strong>Playwright</strong> and <strong>FFmpeg</strong> scripts captured the working app, timed highlights and captions, and assembled the video. <strong>faster-whisper</strong> supplied speech-alignment checks. My related public tool, <a href="https://github.com/Cheeryoh/demo-forge-gif" target="_blank" rel="noopener noreferrer">DemoForge GIF on GitHub</a>, shares the capture lineage.</dd>
+          </div>
+        </dl>
+        <p class="build-stack"><strong>Engineering foundation:</strong> Node.js, TypeScript and Express; a Supabase/Postgres data model; an isolated Railway demo deployment; versioned evidence, repeatable seeds and automated tests.</p>
+      </aside>
     </section>
     <section>
       <div class="eyebrow">Walkthrough and deployment</div>
