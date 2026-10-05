@@ -1,3 +1,13 @@
+# Current release, 2026-10-04 Pacific
+
+The separate interactive application is live at https://graceful-trust-production-3d23.up.railway.app. The original JTA application and its YouTube walkthrough remain unchanged.
+
+The new walkthrough is `assets/certification-intelligence-20261004.mp4`, 203.651 seconds, 1920x1080 H.264/AAC, SHA-256 `5a716d69acef87f683000dacaf317a9b7c2f1c522a0675616b013c0fee574dd7`. Its actual UI capture follows all ten stages using explicitly synthetic evidence and simulated reviewer decisions. It contains one burned-in caption layer and no subtitle track. Full production and technical QA evidence is in the application repository's docs/COMPLETED_CASE_RELEASE.md. Human listening acceptance is not claimed.
+
+Two equal-width capstones retain the existing website design. Both desktop and tablet cards have equal measured heights; mobile stacks without page overflow. The Certification card links separately to its new walkthrough and interactive app. The original three experiment cards remain below. Actual local browser playback and duration were checked before publication.
+
+## Historical checkpoints (superseded status)
+
 ## Current video and frontend, paper-trail cut (2026-10-04)
 
 Application checkpoint: 237353f on feat/certification-intelligence. See application docs/UX_NAVIGATION_REVIEW.md.

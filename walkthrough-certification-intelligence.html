@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A local preview of Certification Intelligence, an independent certification lifecycle demonstration using simulated data and simulated review." />
-  <title>Certification Intelligence | Local Preview</title>
+  <meta name="description" content="Certification Intelligence walkthrough, an independent certification lifecycle demonstration using simulated data and simulated review." />
+  <title>Certification Intelligence | Walkthrough</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23141413'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='600' font-size='14' fill='%23c9a96e'>JO</text></svg>" />
   <style>
     :root { color-scheme: dark; --bg:#111210; --card:#1a1c18; --text:#f0f0e9; --muted:#aeb3a6; --line:#383e33; --accent:#d6b87b; --accent-soft:rgba(214,184,123,.1); }
@@ -20,6 +20,7 @@
     .eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
     .lead { color:var(--muted); font-size:21px; }
     .hero-image { display:block; width:100%; height:auto; margin:34px 0; border:1px solid var(--line); border-radius:12px; background:#0a0b09; }
+    .walkthrough-video { display:block; width:100%; margin:24px 0; border:1px solid var(--line); border-radius:12px; background:#0a0b09; }
     .disclosures { display:flex; flex-wrap:wrap; gap:10px; margin:24px 0; }
     .chip { padding:7px 11px; border:1px solid rgba(214,184,123,.35); border-radius:999px; background:var(--accent-soft); color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.08em; }
     .notice { margin:24px 0 34px; padding:18px 20px; border-left:3px solid var(--accent); background:var(--card); color:var(--muted); }
@@ -32,6 +33,9 @@
     section { margin-top:50px; }
     .stages { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
     .stage p { margin:0; }
+    .actions a { display:inline-flex; min-height:44px; align-items:center; justify-content:center; padding:10px 17px; border:1px solid var(--accent); border-radius:8px; color:var(--bg); background:var(--accent); text-decoration:none; font-weight:600; }
+    .actions a:hover { filter:brightness(1.1); }
+    .actions a:focus-visible { outline:3px solid var(--text); outline-offset:4px; }
     .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
     .disabled { display:inline-flex; min-height:44px; align-items:center; justify-content:center; padding:10px 17px; border:1px solid var(--line); border-radius:8px; color:#74786f; background:#171815; cursor:not-allowed; }
     footer { margin-top:54px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
@@ -43,7 +47,7 @@
   <main>
     <nav aria-label="Page navigation">
       <a href="index.html">&larr; Justin Oh / Projects</a>
-      <span class="muted">Local preview</span>
+      <span class="muted">Public walkthrough</span>
     </nav>
     <header>
       <div class="eyebrow">Independent certification simulation</div>
@@ -76,15 +80,23 @@
       </div>
     </section>
     <section>
+      <div class="eyebrow">Walkthrough</div>
+      <h2 id="walkthrough">Certification Intelligence in action.</h2>
+      <video aria-labelledby="walkthrough" class="walkthrough-video" controls playsinline preload="metadata" poster="assets/certification-intelligence.png">
+        <source src="assets/certification-intelligence-20261004.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <p class="muted">This walkthrough shows an independent demonstration using simulated data and simulated reviewer decisions.</p>
+    </section>
+    <section>
       <div class="eyebrow">Walkthrough and deployment</div>
-      <h2>Public destinations are still pending.</h2>
-      <p class="muted">The local preview is ready for review. No public walkthrough URL or separate Certification Intelligence deployment has been verified, so neither action is active.</p>
-      <div class="actions" aria-label="Pending public actions">
-        <span class="disabled" role="link" aria-disabled="true">Watch walkthrough pending</span>
-        <span class="disabled" role="link" aria-disabled="true">Open experiment pending</span>
+      <h2>The interactive public deployment is ready.</h2>
+      <p class="muted">The public Certification Intelligence app is available for interactive review alongside this walkthrough.</p>
+      <div class="actions" aria-label="Public actions">
+        <a href="https://graceful-trust-production-3d23.up.railway.app" target="_blank" rel="noopener noreferrer">Open experiment</a>
       </div>
     </section>
-    <footer>Independent demonstration using synthetic data, deterministic analysis and rule-based simulated reviewer agents. Public video and deployment remain separate release steps.</footer>
+    <footer>Independent demonstration using synthetic data, deterministic analysis and rule-based simulated reviewer agents. These records are not human approvals and do not validate a real credential.</footer>
   </main>
 </body>
 </html>
