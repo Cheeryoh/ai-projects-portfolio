@@ -33,10 +33,16 @@
     .switch a small { color:var(--accent); font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
     .switch a span { font-weight:600; line-height:1.3; }
     .switch a:hover { border-color:rgba(214,184,123,.5); color:var(--text); }
-    .switch a[aria-current="true"] { border-color:var(--accent); background:var(--accent-soft); color:var(--text); }
+    .switch a[aria-selected="true"] { border-color:var(--accent); background:var(--accent-soft); color:var(--text); }
     .switch a:focus-visible { outline:3px solid var(--text); outline-offset:2px; }
     .program { margin-top:64px; padding-top:8px; }
     .program + .program { border-top:1px solid var(--line); padding-top:56px; }
+    .tabs .program { margin-top:40px; }
+    .tabs .program + .program { border-top:0; padding-top:8px; }
+    .tabs .program[hidden] { display:none; }
+    .tabs .program.entering { animation:program-in .28s cubic-bezier(.16,1,.3,1); }
+    @keyframes program-in { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+    @media (prefers-reduced-motion:reduce) { .tabs .program.entering { animation:none; } }
     .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:28px 0 32px; }
     .metric, .stage { padding:22px; border:1px solid var(--line); border-radius:10px; background:var(--card); }
     .metric strong { display:block; font-size:34px; line-height:1.15; }
@@ -178,16 +184,57 @@
     </footer>
   </main>
   <script>
+    // Program switch: tabs swap the program section in place. Without JavaScript the links still scroll to each section.
     (function () {
-      var links = Array.prototype.slice.call(document.querySelectorAll('.switch a'));
-      var mark = function (id) { links.forEach(function (a) { a.setAttribute('aria-current', a.getAttribute('data-program') === id ? 'true' : 'false'); }); };
-      var start = location.hash === '#netsuite' ? 'netsuite' : 'data-center';
-      mark(start);
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) { if (e.isIntersecting) mark(e.target.id); });
-        }, { rootMargin: '-45% 0px -50% 0px' });
-        ['data-center', 'netsuite'].forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+      var bar = document.querySelector('.switch');
+      var tabs = Array.prototype.slice.call(bar.querySelectorAll('a'));
+      var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('data-program')); });
+      document.documentElement.classList.add('tabs');
+      bar.setAttribute('role', 'tablist');
+      tabs.forEach(function (t, i) {
+        t.setAttribute('role', 'tab'); t.id = 'tab-' + panels[i].id; t.setAttribute('aria-controls', panels[i].id);
+        panels[i].setAttribute('role', 'tabpanel'); panels[i].setAttribute('aria-labelledby', t.id);
+      });
+      var idFor = function (hash) { var id = (hash || '').replace('#', ''); if (id === 'walkthrough') id = 'data-center'; return panels.some(function (p) { return p.id === id; }) ? id : null; };
+      var show = function (id, animate) {
+        panels.forEach(function (p, i) {
+          var on = p.id === id;
+          tabs[i].setAttribute('aria-selected', on ? 'true' : 'false'); tabs[i].tabIndex = on ? 0 : -1;
+          if (on) {
+            p.hidden = false;
+            if (animate) { p.classList.remove('entering'); void p.offsetWidth; p.classList.add('entering'); }
+          } else {
+            p.hidden = true; p.querySelectorAll('video').forEach(function (v) { v.pause(); });
+          }
+        });
+      };
+      // A sticky element reports its stuck position, so a marker just above it records where the bar sits in the page.
+      var marker = document.createElement('div');
+      bar.parentNode.insertBefore(marker, bar);
+      var barTop = function () { return Math.round(marker.getBoundingClientRect().top + window.scrollY + parseFloat(getComputedStyle(bar).marginTop)); };
+      var jump = function (y) { try { window.scrollTo({ top: y, behavior: 'instant' }); } catch (e) { window.scrollTo(0, y); } };
+      var select = function (id) {
+        var top = barTop();
+        show(id, true);
+        if (history.replaceState) history.replaceState(null, '', '#' + id);
+        if (window.scrollY > top) jump(top);
+      };
+      tabs.forEach(function (t, i) {
+        t.addEventListener('click', function (e) { e.preventDefault(); select(panels[i].id); });
+        t.addEventListener('keydown', function (e) {
+          var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+          if (!d) return;
+          e.preventDefault(); var n = tabs[(i + d + tabs.length) % tabs.length]; n.focus(); select(n.getAttribute('data-program'));
+        });
+      });
+      window.addEventListener('hashchange', function () { var id = idFor(location.hash); if (id) { show(id, true); jump(barTop()); } });
+      var start = idFor(location.hash) || 'data-center';
+      show(start, false);
+      // A deep link (from the homepage tiles) lands with the switch at the top and the chosen program's video in view.
+      if (idFor(location.hash)) {
+        if (history.replaceState) history.replaceState(null, '', '#' + start);
+        var land = function () { jump(barTop()); };
+        land(); window.addEventListener('load', land, { once: true });
       }
       var videos = Array.prototype.slice.call(document.querySelectorAll('video'));
       videos.forEach(function (v) { v.addEventListener('play', function () { videos.forEach(function (o) { if (o !== v) o.pause(); }); }); });
