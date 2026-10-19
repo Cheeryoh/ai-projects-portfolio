@@ -67,7 +67,7 @@
         <div class="section-header" data-animate>
           <p class="section-label">The Experiments</p>
           <h2 class="section-title">5 AI systems I built for L&amp;D and certification.</h2>
-          <p class="section-subtitle">Two capstones show how I design and operate assessment systems end to end. The original JTA builder supports my work at Intuit, and the AI Fluency exam is in development there. Certification Intelligence is an independent simulation.</p>
+          <p class="section-subtitle">Two capstones show how I design and operate assessment systems end to end. The original JTA builder supports my work at Intuit, and the AI Fluency exam is in development there. Certification Intelligence is an independent simulation that runs two programs.</p>
         </div>
 
         <div class="projects-grid">
@@ -140,10 +140,17 @@
             </div>
           </article>
 
-            <!-- CAPSTONE 2: Certification Intelligence -->
+            <!-- CAPSTONE 2: Certification Intelligence (one engine, two programs) -->
             <article class="card card-capstone" data-animate>
-              <div class="card-media">
-                <img src="assets/certification-intelligence.png" alt="Certification Intelligence workspace showing ten lifecycle stages, ten thousand synthetic candidates and clearly labeled simulated review" width="1600" height="900" loading="lazy">
+              <div class="card-media card-media-pair">
+                <figure>
+                  <img src="assets/certification-intelligence.png" alt="Data Center Facilities Technician program in the Certification Intelligence workspace" width="1600" height="900" loading="lazy">
+                  <figcaption>Data Center</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/certification-intelligence-netsuite.png" alt="NetSuite SuiteFoundation-aligned program in the Certification Intelligence workspace, opening on a release-driven investigation" width="1600" height="900" loading="lazy">
+                  <figcaption>NetSuite</figcaption>
+                </figure>
               </div>
 
               <div class="card-top">
@@ -156,7 +163,7 @@
 
               <div>
                 <h3 class="card-title">Certification Intelligence</h3>
-                <p class="card-hook">A connected certification lifecycle, from job analysis to monitored release, with every consequential change passing through review.</p>
+                <p class="card-hook">One certification engine, two programs: build a credential, then keep one current.</p>
               </div>
 
               <div class="card-disclosures" aria-label="Simulation disclosures">
@@ -173,26 +180,38 @@
                   <span class="card-stat-label">Lifecycle Stages</span>
                 </div>
                 <div class="card-stat">
-                  <span class="card-stat-value">10,000</span>
-                  <span class="card-stat-label">Synthetic Attempts</span>
+                  <span class="card-stat-value">2</span>
+                  <span class="card-stat-label">Programs</span>
                 </div>
                 <div class="card-stat">
-                  <span class="card-stat-value">600,000</span>
-                  <span class="card-stat-label">Simulated Responses</span>
+                  <span class="card-stat-value">20,000</span>
+                  <span class="card-stat-label">Simulated Attempts</span>
                 </div>
               </div>
 
-              <p class="card-desc">This independent demonstration connects practitioner validation, blueprinting, standard setting, pilot analysis, launch, monitoring, investigation, and refresh. Its evidence and reviewer decisions are pre-generated simulations built to make governance visible. They do not validate a real credential.</p>
+              <p class="card-desc">The same evidence engine runs both programs. One builds a credential from job analysis to monitored launch; the other keeps a credential portfolio current when a product release changes what an exam item should say. All evidence and reviewer decisions are simulated.</p>
 
-              <div class="card-steps" aria-label="How evidence moves">
-                <p class="card-steps-label">How evidence moves</p>
-                <ol>
-                  <li>Practitioner evidence proposes the JTA and domain weights.</li>
-                  <li>An approved blueprint controls form assembly.</li>
-                  <li>Standard setting and pilot evidence support a reviewed launch.</li>
-                  <li>Monitoring opens investigations; approved successors return to pilot and revalidation.</li>
-                </ol>
+              <div class="program-tiles" aria-label="Programs">
+                <section class="program-tile" aria-labelledby="program-dc">
+                  <p class="program-tile-label">Program 01 &middot; Build</p>
+                  <h4 class="program-tile-name" id="program-dc">Data Center Facilities Technician</h4>
+                  <p class="program-tile-text">Job analysis, blueprint, Modified Angoff, pilot, launch, drift monitoring and refresh.</p>
+                  <div class="program-tile-ctas">
+                    <a href="walkthrough-certification-intelligence.html#data-center" target="_blank" rel="noopener noreferrer" class="card-cta-primary">Watch walkthrough &nearr;</a>
+                    <a href="https://graceful-trust-production-3d23.up.railway.app" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Open app &nearr;</a>
+                  </div>
+                </section>
+                <section class="program-tile" aria-labelledby="program-ns">
+                  <p class="program-tile-label">Program 02 &middot; Maintain</p>
+                  <h4 class="program-tile-name" id="program-ns">NetSuite SuiteFoundation-aligned</h4>
+                  <p class="program-tile-text">A release breaks a keyed answer: detect the drift, confirm the cause, revise on the record, report.</p>
+                  <div class="program-tile-ctas">
+                    <a href="walkthrough-certification-intelligence.html#netsuite" target="_blank" rel="noopener noreferrer" class="card-cta-primary">Watch walkthrough &nearr;</a>
+                    <a href="https://netsuite-cert-demo-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Open app &nearr;</a>
+                  </div>
+                </section>
               </div>
+              <p class="program-tile-note">Not affiliated with or endorsed by Oracle. NetSuite and Oracle are trademarks of Oracle Corporation; used for identification only.</p>
 
               <div class="card-tags" aria-label="Technologies used">
                 <span class="tag">Node.js</span>
@@ -200,11 +219,6 @@
                 <span class="tag">R / mirt</span>
                 <span class="tag">Supabase</span>
                 <span class="tag">Railway</span>
-              </div>
-
-              <div class="card-ctas">
-                <a href="walkthrough-certification-intelligence.html#walkthrough" target="_blank" rel="noopener noreferrer" class="card-cta-primary">Watch walkthrough &nearr;</a>
-                <a href="https://graceful-trust-production-3d23.up.railway.app" target="_blank" rel="noopener noreferrer" class="card-cta-ghost">Open Experiment &nearr;</a>
               </div>
               </div>
             </article>
