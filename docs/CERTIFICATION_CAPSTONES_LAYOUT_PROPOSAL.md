@@ -9,8 +9,8 @@ This keeps the current visual system: dark surfaces, warm borders, compact metri
 ## Implementation status (2026-10-04)
 
 - The page now uses two equal capstone cards above the three supporting experiment cards.
-- Certification Intelligence uses the final 1600x900 application screenshot at `C:\Users\Justin O\Desktop\All AI Projects\web\cheeryoh-certification-portfolio\assets\certification-intelligence.png`.
-- The layout was verified at 1440px, 1024px, and 390px. The screenshots and measured geometry are in `C:\Users\Justin O\Desktop\All AI Projects\web\cheeryoh-certification-portfolio\docs\layout-verification`.
+- Certification Intelligence uses the final 1600x900 application screenshot at `assets/certification-intelligence.png`.
+- The layout was verified at 1440px, 1024px, and 390px. The screenshots and measured geometry are in `docs/layout-verification`.
 - The Certification Intelligence walkthrough and deployment URLs are still pending verification. Both controls remain visibly disabled until those destinations exist and are checked.
 - The original JTA card, historical walkthrough, and Railway links remain in the supporting row.
 - `walkthrough-jta.html` now belongs only to the original JTA Exam Builder Orchestra and preserves the historical `81cj6c5laE0` video. `walkthrough-certification-intelligence.html` is a separate local preview with no borrowed video or deployment URL.
@@ -197,7 +197,7 @@ Use `assets/perflab-console.webp` as the single hero image. It shows the definin
 
 The selected 1600x900 screenshot is now stored at:
 
-`C:\Users\Justin O\Desktop\All AI Projects\web\cheeryoh-certification-portfolio\assets\certification-intelligence.png`
+`assets/certification-intelligence.png`
 
 It shows the ten-stage lifecycle navigation, synthetic-data disclosure, simulated-review disclosure, and overview evidence in one frame. The page declares its intrinsic `width="1600" height="900"`, retains `loading="lazy"`, and uses descriptive alt text that identifies the simulated review.
 
